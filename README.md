@@ -10,8 +10,11 @@ All page content lives in `_data/*.yml` — edit those files, not the `.html` on
 | `_data/publications.yml` | Publications page + "Recent publications" on Home |
 | `_data/cv.yml` | Full CV page (education, positions, teaching, awards, skills) — also points to your CV PDF |
 | `_data/tools.yml` | Tools page (each entry: name, description, website/GitHub/HuggingFace links) |
+| `_data/talks.yml` | Talks page (each entry: title, event, date, Indico/slides links) — also the QR code image path |
 
-To add a new publication or tool, copy an existing entry in the file and edit it — the layout picks it up automatically.
+To add a new publication, tool, or talk, copy an existing entry in the file and edit it — the layout picks it up automatically.
+
+To add your QR code: drop the image anywhere under `assets/` and set the `qr_code:` field in `talks.yml` to that path.
 
 To add your real photo: replace `assets/profile-placeholder.svg` with your image (e.g. `assets/profile.jpg`) and update the `photo:` field in `profile.yml` to match.
 

@@ -56,11 +56,21 @@ title: Home
 <section>
   <h2>Fun fact: my name</h2>
   <dl class="name-note">
-    {% for row in p.name_fun_fact %}
+    {% for row in p.name_fun_fact_block1 %}
     <div class="name-note-row">
       <dt>{{ row.label }}</dt>
       <dd>{{ row.value }}</dd>
     </div>
     {% endfor %}
   </dl>
+  <p class="fun-fact-intro">{{ p.name_fun_fact_intro }}</p>
+  <dl class="name-note">
+    {% for row in p.name_fun_fact_block2 %}
+    <div class="name-note-row">
+      <dt>{{ row.label }}</dt>
+      <dd>{{ row.value }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+  <p class="fun-fact-outro">{{ p.name_fun_fact_outro }}</p>
 </section>
