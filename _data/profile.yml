@@ -11,15 +11,28 @@ bio:
     I am drawn to the underlying structure rather than to any single successful instance of it.
   - >
     My background is in physics, but I have grown fond of machine learning and computer science. Most of my current work develops machine learning models for problems in fundamental physics. I want whole new approaches to science: faster with AI is not enough, it needs to be new and/or better! :)
-  - >
-    Journey so far:
-    From the small amazing island of Penang, Malaysia. #penangonebetter \n
-    BSc in Physics from Universiti Malaya, Malaysia.
-    Did a Research Internship at Academia Sinica, Taiwan. 
-    MSc in Physics from Universität Bonn, Germany.
-    Did a Research Assistantship at Aveiro University, Portugal.
-    Currently a PhD candidate at Uppsala University, Sweden.
-    Did a Visiting Researcher at the University of Cambridge, UK.
+
+# "Journey so far" — shown as a timeline under the bio on Home.
+# Add/reorder stops freely; set "current: true" on the one you're at now.
+journey:
+  - place: "Penang, Malaysia"
+    role: "Grew up here — #penangonebetter"
+  - place: "Universiti Malaya, Malaysia"
+    role: "BSc in Physics"
+  - place: "Academia Sinica, Taiwan"
+    role: "Research Internship"
+  - place: "Universität Bonn, Germany"
+    role: "MSc in Physics"
+  - place: "Aveiro University, Portugal"
+    role: "Research Assistantship"
+  - place: "Uppsala University, Sweden"
+    role: "PhD Candidate"
+    current: true
+    # a stint that happened *during* this stop, not after it
+    visits:
+      - place: "University of Cambridge, UK"
+        role: "Visiting Researcher"
+
 # Path to your photo. Drop a real image at assets/profile.jpg and change this.
 photo: "assets/profile-placeholder.svg"
 
