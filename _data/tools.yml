@@ -11,7 +11,7 @@
 - name: "BART-L Demo"
   description: >
     A live demo of the BART-Lagrangian model from our SciPost paper. Give it the particle content you care about and the transformer writes out valid
-    particle-physics Lagrangians for it. Backend by Me, Frontend by Eliel. The model is also available on Hugging Face.
+    particle-physics Lagrangians for it. Latex-Conversion by Me, Website by Eliel. The model is also available on Hugging Face.
   huggingface: "https://huggingface.co/spaces/JoseEliel/generate-lagrangians"
   model: "https://huggingface.co/JoseEliel/BART-Lagrangian"
   dataset: "https://huggingface.co/datasets/JoseEliel/lagrangian_generation"
