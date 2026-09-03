@@ -15,35 +15,35 @@ bio:
 # "Journey so far" — shown as a timeline under the bio on Home.
 # Add/reorder stops freely; set "current: true" on the one you're at now.
 journey:
-  - place: "Penang, Malaysia"
+  - place: "Penang 🏝️, Malaysia 🇲🇾"
     role: "Grew up here — #penangonebetter"
-  - place: "Universiti Malaya, Malaysia"
+  - place: "Universiti Malaya, KL/PJ, Malaysia 🇲🇾"
     role: "BSc in Physics"
-  - place: "Academia Sinica, Taiwan"
+  - place: "Academia Sinica, Taiwan 🇹🇼"
     role: "Research Internship"
-  - place: "Universität Bonn, Germany"
+  - place: "Universität Bonn, Germany 🇩🇪"
     role: "MSc in Physics"
-  - place: "Aveiro University, Portugal"
+  - place: "Aveiro University, Portugal 🇵🇹"
     role: "Research Assistantship"
-  - place: "Uppsala University, Sweden"
+  - place: "Uppsala University, Sweden 🇸🇪"
     role: "PhD Candidate"
     current: true
     # a stint that happened *during* this stop, not after it
     visits:
-      - place: "University of Cambridge, UK"
-        role: "Visiting Researcher"
+      - place: "University of Cambridge, UK 🇬🇧"
+        role: "Visiting PhD Student"
 
 # Path to your photo. Drop a real image at assets/profile.jpg and change this.
-photo: "assets/profile-placeholder.svg"
+photo: "assets/profile_pic.jpg"
 
 # Shown on the Contact page.
-office: "Room XXX, Physics Building, Your University, Your City"
-office_email: "you@example.edu"
+office: "Ångströmlaboratoriet, Uppsala University, Sweden"
+office_email: "yongsheng.koay.REPLACE_THIS_WITH_AN_ADD.physics.uu.se"
 
 # Shown as the link row on the Home page.
 links:
   - label: "email"
-    url: "mailto:you@example.edu"
+    url: "mailto:yongsheng.koay.REPLACE_THIS_WITH_AN_ADD.physics.uu.se"
   - label: "arXiv"
     url: "https://arxiv.org/search/hep-ph?searchtype=author&query=Koay,+Y+S"
   - label: "InspireHEP"

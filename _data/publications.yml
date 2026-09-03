@@ -1,28 +1,35 @@
-# --- One entry per publication. Copy a block below and edit it to add a new paper. ---
+# --- One entry per publication, newest first. Copy a block below and edit it to add a new paper. ---
+# `authors` allows inline HTML (<strong>) so the owner's name can be highlighted.
 
-- title: "Symbolic regression recovers conserved quantities from raw trajectories"
-  authors: "K. Y. Sheng, A. Okafor, R. Lindqvist"
-  venue: "arXiv:25xx.xxxxx"
-  link: "#"
+- title: "Generating particle physics Lagrangians with transformers"
+  authors: "<strong>Y. S. Koay</strong>, R. Enberg, S. Moretti, J. E. Camargo-Molina"
+  venue: "SciPost Phys. 21, 024 (2026)"
+  link: "https://arxiv.org/abs/2501.09729"
   popsci: >
-    Handed nothing but position and momentum readings from a simulated
-    pendulum, our search procedure rediscovers energy conservation as a
-    compact algebraic expression — no physics textbook required.
+    Can AI write the equations that describe universes? Yes — and better than I could as a master's student. 
+    A Lagrangian is the compact formula that defines a particle physics model, and it works a lot like language: fields are the words, the terms built from them are the sentences, and symmetry is the grammar holding it all together. Change one word and the sentence means something else; change one term and you change everything the model predicts, from how the universe evolved to what we should see in today's experiments. We taught a transformer that grammar — and it writes valid Lagrangians for particle content it has never seen.
 
-- title: "Neuro-symbolic program synthesis for closed-form potentials"
-  authors: "K. Y. Sheng, R. Lindqvist"
-  venue: "Phys. Rev. Research, 2024"
-  link: "#"
+- title: "The ABC of RPV III: Classification of R-parity Violating Signatures from LQD Couplings and their Coverage at the LHC"
+  authors: "H. K. Dreiner, <strong>Y. S. Koay</strong>, T. Potter, M. Schürmann, R. Sengupta, A. Shah, N. Strobbe"
+  venue: "arXiv:2608.21033 [hep-ph], 2026"
+  link: "https://arxiv.org/abs/2608.21033"
   popsci: >
-    A hybrid search lets a neural network propose candidate equations while
-    a symbolic solver checks them exactly, cutting the space of "plausible
-    physics" down to the handful of formulas that actually fit.
+    Final work of the ABC of RPV series, this time for the LQD couplings. Main contribution by Rhitaja, Apoorva and Martin!
 
-- title: "When does a learned law generalize? A benchmark for symbolic discovery"
-  authors: "K. Y. Sheng"
-  venue: "in preparation"
-  link: "#"
+- title: "The ABC of RPV. Part II. Classification of R-parity violating signatures from UDD couplings and their coverage at the LHC"
+  authors: "H. K. Dreiner, M. Hank, <strong>Y. S. Koay</strong>, M. Schürmann, R. Sengupta, A. Shah, N. Strobbe, E. Thomson"
+  venue: "JHEP 06 (2025) 258"
+  link: "https://arxiv.org/abs/2503.03830"
   popsci: >
-    Most symbolic-regression benchmarks test curve-fitting, not discovery.
-    This one asks a harder question: does the recovered formula still hold
-    outside the range it was fit on?
+    2nd work in the ABC of RPV series, this time for the UDD couplings. Main contribution by Rhitaja, Apoorva and Martin!
+
+- title: "The ABC of RPV: classification of R-parity violating signatures at the LHC for small couplings"
+  authors: "H. K. Dreiner, <strong>Y. S. Koay</strong>, D. Köhler, V. M. Lozano, J. Montejo Berlingen, S. Nangia, N. Strobbe"
+  venue: "JHEP 07 (2023) 215"
+  link: "https://arxiv.org/abs/2306.07317"
+  popsci: >
+    R-parity violating supersymmetry has too many possible signatures to look for in the collider. 
+    Instead we classify what the theory can produce into a finite number of collider signatures. 
+    14!~9·10^10  possible hierarchies and corresponding search possibilities reduced to 6 distinct signatures.
+    We showed for LLE case here. I wrote the package to look for the signatures and did the collider analysis for the LLE case.
+    Idea and main contribution by Saurabh! 

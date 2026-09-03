@@ -37,9 +37,4 @@ awards:
 
 skills:
   - "PyTorch"
-  - "JAX"
-  - "Symbolic regression"
-  - "Program synthesis"
-  - "SymPy"
-  - "C++"
   - "HPC / SLURM"
