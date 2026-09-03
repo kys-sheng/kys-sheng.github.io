@@ -34,10 +34,11 @@
 
 - name: "GNN Interactive Viz"
   description: >
-    Two sets of browser-based teaching demos, LLM-coded from my own designs.
-    For GNNs: build a directed kNN graph by hand and watch messages get passed,
-    aggregated, and turned into updated node embeddings. For transformers: an
-    attention walkthrough that treats IceCube detector hits as tokens, from
-    input to final prediction.
+    Three browser-based teaching demos, LLM-coded from my own designs. Two walk
+    through GNNs — a fully-explained step-by-step visualizer, and a lighter,
+    editable directed-kNN demo — showing messages get passed, aggregated, and
+    turned into updated node embeddings. The third is a transformer attention
+    walkthrough that treats IceCube detector hits as tokens, from input to
+    final prediction.
   website: "https://kys-sheng.github.io/gnn_interactive_viz/"
   github: "https://github.com/kys-sheng/gnn_interactive_viz"
