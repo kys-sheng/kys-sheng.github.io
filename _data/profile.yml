@@ -1,21 +1,24 @@
 # --- Edit this file to update your name, bio, photo, and contact links. ---
 
-name: "K. Y. Sheng"
-name_zh: "沈國瑜"          # your name in Mandarin, shown in brackets next to your name
-tagline: "PhD Candidate — AI for Symbolic Discovery in Physics"
+name: "Yong Sheng Koay"
+name_zh: "郭永盛"          # your name in Mandarin, shown in brackets next to your name
+tagline: "PhD Candidate — AI for Fundamental Physics"  # shown on the Home page, under your name
 
 # One or more paragraphs. Add a new "- >" block for each paragraph.
 bio:
   - >
-    I build machine learning systems that search for interpretable, symbolic
-    descriptions of physical phenomena — conservation laws, closed-form
-    potentials, effective equations — directly from data and simulation,
-    rather than opaque black-box fits.
+    I care about how the world works from a fundamental point of view. Mathematics for its own sake is fun and amazing, but what excites me is mathematics bound by reality.
+    I am drawn to the underlying structure rather than to any single successful instance of it.
   - >
-    My background spans physics and computer science, and most of my work
-    sits at the point where a learned model has to hand back something a
-    physicist can actually check by hand.
-
+    My background is in physics, but I have grown fond of machine learning and computer science. Most of my current work develops machine learning models for problems in fundamental physics. I want whole new approaches to science: faster with AI is not enough, it needs to be new and/or better! :)
+  - >
+    From Penang, Malaysia. #penangonebetter
+    BSc in Physics from Universiti Malaya, Malaysia.
+    MSc in Physics from Universität Bonn, Germany.
+    Currently a PhD candidate at Uppsala University, Sweden.
+    Research Internship at Academia Sinica, Taiwan. 
+    Research Assistantship at Aveiro University, Portugal.
+    Visiting Researcher at the University of Cambridge, UK.
 # Path to your photo. Drop a real image at assets/profile.jpg and change this.
 photo: "assets/profile-placeholder.svg"
 
