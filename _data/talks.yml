@@ -6,7 +6,7 @@ under_construction: "This page is under construction — check back soon for act
 # Path to a QR code image (e.g. linking to this page, or to your slides).
 # Drop the image at this path and it'll show up automatically; leave blank
 # to show a placeholder box instead.
-qr_code: ""
+qr_code: "assets/extended.svg"
 
 # One entry per talk. Copy a block below and replace the XXX placeholders
 # when you have a real talk to add. indico/slides are optional — omit a
