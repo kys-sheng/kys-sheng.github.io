@@ -1,0 +1,8 @@
+# --- Edit the footer note any time you like. ---
+
+footer_note: "Built with Claude Code. Not a web design person :)."
+
+# "Last updated" and the copyright year in the footer are both computed
+# automatically from the site build time / current year — nothing to edit
+# for those, they update on their own every time the site is rebuilt (i.e.
+# every time you push a change).

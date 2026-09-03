@@ -4,6 +4,7 @@ name: "Yong Sheng Koay"
 name_zh: "郭永盛"          # your name in Mandarin, shown in brackets next to your name
 tagline: "PhD Candidate — AI for Fundamental Physics"  # shown on the Home page, under your name
 
+
 # One or more paragraphs. Add a new "- >" block for each paragraph.
 bio:
   - >
@@ -52,3 +53,24 @@ links:
     url: "https://github.com/kys-sheng"
   - label: "Scholar"
     url: "https://scholar.google.com/citations?user=shyOq3QAAAAJ"
+
+# "Fun fact" section, shown at the bottom of Home. Add/remove rows freely,
+# order here is the order they're shown in.
+# The Hokkien POJ line is a best-effort reading (郭永盛 -> Koeh Éng-sēng) —
+# Hokkien pronunciation varies a lot by region/family, so please double-check
+# it matches how your own family actually says it before trusting it.
+name_fun_fact:
+  - label: "In academia and western world"
+    value: "Yong Sheng Koay"
+  - label: "In Malaysia"
+    value: "Koay Yong Sheng — family name first, per Chinese culture!"
+  - label: "Given name"
+    value: "Yong Sheng"
+  - label: "Family name"
+    value: "Koay"
+  - label: "Mandarin, Pinyin"
+    value: "Guō Yǒngshèng (郭永盛)"
+  - label: "Hokkien, POJ"
+    value: "Koeh Éng-sēng"
+  - label: "Call me"
+    value: "Sheng (never Yong, please!)"
