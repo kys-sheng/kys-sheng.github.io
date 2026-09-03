@@ -95,17 +95,31 @@ h1{font-size:2.15rem; font-weight:600; margin:0 0 .35rem; text-wrap:balance; let
 .journey-visits .journey-role{font-size:.78rem}
 
 .name-note{
-  display:flex; flex-wrap:wrap; gap:.5rem 1.6rem;
+  display:grid; grid-template-columns:11rem 1fr; row-gap:.85rem; column-gap:1.4rem;
   background:var(--surface); border-radius:8px;
-  padding:.9rem 1.1rem; margin:0 0 1.8rem;
-  font-size:.84rem;
+  padding:1.2rem 1.4rem; margin:0; font-size:.92rem;
 }
-.name-note-row{display:flex; gap:.4rem; align-items:baseline}
+.name-note-row{display:contents}
 .name-note dt{
   font-family:"IBM Plex Mono", monospace; font-size:.72rem; text-transform:uppercase;
-  letter-spacing:.05em; color:var(--muted); white-space:nowrap;
+  letter-spacing:.05em; color:var(--muted); padding-top:.15rem;
 }
 .name-note dd{margin:0; color:var(--text)}
+
+.fun-fact-intro{
+  color:var(--muted); font-size:.86rem; font-style:italic;
+  text-align:center; margin:1rem 0; max-width:none;
+}
+.fun-fact-outro{
+  font-style:italic; color:var(--muted); font-size:.92rem;
+  margin:1.1rem 0 0;
+}
+@media (max-width:520px){
+  .name-note{grid-template-columns:1fr; row-gap:.3rem}
+  .name-note-row{display:block; margin-bottom:.7rem}
+  .name-note-row:last-child{margin-bottom:0}
+  .name-note dt{padding-top:0}
+}
 
 .profile-row{display:flex; align-items:center; gap:1.4rem; margin-bottom:1.6rem}
 .avatar{
@@ -179,6 +193,14 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
 }
 .tool-links a{color:var(--link); text-decoration:none; border-bottom:1px solid transparent}
 .tool-links a:hover{border-bottom-color:var(--link)}
+
+/* talks page */
+.qr-code{width:180px; height:180px; object-fit:contain; border:1px solid var(--rule); border-radius:8px; padding:.8rem; background:var(--bg)}
+.qr-code-placeholder{
+  width:180px; height:180px; display:flex; align-items:center; justify-content:center;
+  border:1px dashed var(--rule); border-radius:8px; color:var(--muted);
+  font-family:"IBM Plex Mono", monospace; font-size:.78rem; text-align:center; padding:1rem;
+}
 
 footer.site-footer{
   max-width:640px; margin:2.5rem auto 0; padding:1.6rem 1.5rem 2.5rem;

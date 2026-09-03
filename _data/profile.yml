@@ -56,23 +56,33 @@ links:
   - label: "Scholar"
     url: "https://scholar.google.com/citations?user=shyOq3QAAAAJ"
 
-# "Fun fact" section, shown at the bottom of Home. Add/remove rows freely,
-# order here is the order they're shown in.
+# "Fun fact" section, shown at the bottom of Home, as two blocks of rows
+# with a caption line between them, and a cheeky closing line at the end.
+# Add/remove rows freely — order here is the order they're shown in.
 # The Hokkien POJ line is a best-effort reading (郭永盛 -> Koeh Éng-sēng) —
 # Hokkien pronunciation varies a lot by region/family, so please double-check
 # it matches how your own family actually says it before trusting it.
-name_fun_fact:
-  - label: "In academia and western world"
-    value: "Yong Sheng Koay"
+name_fun_fact_block1:
   - label: "In Malaysia"
-    value: "Koay Yong Sheng — (Family name first per Chinese culture! A mix of different pronounciation per Malaysian rojak chaos!)"
+    value: "Koay Yong Sheng"
+  - label: "In Western World (Academia)"
+    value: "Yong Sheng Koay"
+  - label: "In Mandarin"
+    value: "郭永盛"
+name_fun_fact_intro: >
+  Family name first, per Chinese culture — and then a mix of different
+  pronunciations, per Malaysian rojak chaos.
+name_fun_fact_block2:
   - label: "Given name"
-    value: "Yong Sheng"
+    value: "Yong Sheng (永盛)"
   - label: "Family name"
-    value: "Koay"
+    value: "Koay (郭)"
   - label: "Mandarin, Pinyin"
     value: "Guō Yǒngshèng"
   - label: "Hokkien, POJ"
     value: "Koeh Éng-sēng"
   - label: "Call me"
     value: "Yong Sheng or Sheng (never Yong, please!)"
+name_fun_fact_outro: >
+  Don't ask my Malaysian friends what they call me, they will give you
+  anything but the real thing :)

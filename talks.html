@@ -1,0 +1,39 @@
+---
+layout: default
+title: Talks
+---
+{% assign t = site.data.talks %}
+
+<p class="kicker">Talks &amp; Slides</p>
+<h1>Talks</h1>
+<p class="role">{{ t.under_construction }}</p>
+
+<section>
+  <div class="tool-grid">
+    {% for talk in t.talks %}
+    <div class="tool">
+      <div class="tool-name">{{ talk.title }}</div>
+      <div class="tool-desc">{{ talk.event }} — {{ talk.date }}</div>
+      {% assign has_indico = false %}
+      {% if talk.indico and talk.indico != "" %}{% assign has_indico = true %}{% endif %}
+      {% assign has_slides = false %}
+      {% if talk.slides and talk.slides != "" %}{% assign has_slides = true %}{% endif %}
+      {% if has_indico or has_slides %}
+      <div class="tool-links">
+        {% if has_indico %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">indico ↗</a>{% endif %}
+        {% if has_slides %}<a href="{{ talk.slides }}" target="_blank" rel="noopener">slides ↗</a>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>QR code</h2>
+  {% if t.qr_code and t.qr_code != "" %}
+  <img class="qr-code" src="{{ t.qr_code | relative_url }}" alt="QR code">
+  {% else %}
+  <div class="qr-code-placeholder">QR code coming soon</div>
+  {% endif %}
+</section>
