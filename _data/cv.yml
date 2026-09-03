@@ -25,10 +25,6 @@ positions:
     what: "Research Assistant (Wissenschaftliche Hilfskraft)"
     where: "Bethe Center for Theoretical Physics (BCTP), Universität Bonn, Germany"
     detail: "Lepton initiated processes at the LHC; R-parity violating MSSM at the LHC."
-  - period: "Oct 2019 — Dec 2020"
-    what: "Master Thesis"
-    where: "Bethe Center for Theoretical Physics (BCTP), Universität Bonn, Germany"
-    detail: "Constraining the B-anomalies Motivated Leptoquark Model at the LHC. Supervisor: Prof. Dr. Manuel Drees."
   - period: "Aug 2019 — Sep 2019"
     what: "Research Intern"
     where: "Bethe Center for Theoretical Physics (BCTP), Universität Bonn, Germany"
@@ -55,10 +51,11 @@ teaching:
     what: "Teaching Assistant"
     where: "Universität Bonn, Germany"
     detail: "Advanced Quantum Theory (WS21/22); Advanced Theoretical Particle Physics (SS21); Theoretical Particle Physics (WS20/21); General Relativity and Cosmology (SS20)."
-
 awards:
   - period: "2026"
     what: "Best poster and featured plenary highlight talk (top 5 of 162), EuCAIFCon 2026"
+  - period: "2025"
+    what: "Lundström-Åman Scholarship (16,741 SEK), Lundström-Åmans stipendiestiftelse"
   - period: "2025"
     what: "Letterstedt travel scholarship (73,649 SEK), Letterstedts resestipendium"
   - period: "2024"
