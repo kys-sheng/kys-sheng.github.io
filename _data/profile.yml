@@ -12,13 +12,14 @@ bio:
   - >
     My background is in physics, but I have grown fond of machine learning and computer science. Most of my current work develops machine learning models for problems in fundamental physics. I want whole new approaches to science: faster with AI is not enough, it needs to be new and/or better! :)
   - >
-    From Penang, Malaysia. #penangonebetter
+    Journey so far:
+    From the small amazing island of Penang, Malaysia. #penangonebetter \n
     BSc in Physics from Universiti Malaya, Malaysia.
+    Did a Research Internship at Academia Sinica, Taiwan. 
     MSc in Physics from Universität Bonn, Germany.
+    Did a Research Assistantship at Aveiro University, Portugal.
     Currently a PhD candidate at Uppsala University, Sweden.
-    Research Internship at Academia Sinica, Taiwan. 
-    Research Assistantship at Aveiro University, Portugal.
-    Visiting Researcher at the University of Cambridge, UK.
+    Did a Visiting Researcher at the University of Cambridge, UK.
 # Path to your photo. Drop a real image at assets/profile.jpg and change this.
 photo: "assets/profile-placeholder.svg"
 
@@ -31,10 +32,10 @@ links:
   - label: "email"
     url: "mailto:you@example.edu"
   - label: "arXiv"
-    url: "https://arxiv.org/a/your_id"
+    url: "https://arxiv.org/search/hep-ph?searchtype=author&query=Koay,+Y+S"
   - label: "InspireHEP"
-    url: "https://inspirehep.net/authors/your_id"
+    url: "https://inspirehep.net/authors/2668337"
   - label: "GitHub"
     url: "https://github.com/kys-sheng"
   - label: "Scholar"
-    url: "https://scholar.google.com/citations?user=your_id"
+    url: "https://scholar.google.com/citations?user=shyOq3QAAAAJ"
