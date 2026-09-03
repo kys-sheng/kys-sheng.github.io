@@ -7,6 +7,8 @@ tagline: "PhD Candidate — AI for Fundamental Physics"  # shown on the Home pag
 
 # One or more paragraphs. Add a new "- >" block for each paragraph.
 bio:
+  - > 
+    Hi! Im Yong Sheng (or just Sheng), I like physics and science and research and many stuff, currently trying to stay in academia as long as it will allow me. 
   - >
     I care about how the world works from a fundamental point of view. Mathematics for its own sake is fun and amazing, but what excites me is mathematics bound by reality.
     I am drawn to the underlying structure rather than to any single successful instance of it.
@@ -17,7 +19,7 @@ bio:
 # Add/reorder stops freely; set "current: true" on the one you're at now.
 journey:
   - place: "Penang 🏝️, Malaysia 🇲🇾"
-    role: "Grew up here — #penangonebetter"
+    role: "Grew up in this small amazing island — #penangonebetter"
   - place: "Universiti Malaya, KL/PJ, Malaysia 🇲🇾"
     role: "BSc in Physics (Theoretical/Computational Material Science)"
   - place: "Academia Sinica, Taiwan 🇹🇼"
@@ -63,7 +65,7 @@ name_fun_fact:
   - label: "In academia and western world"
     value: "Yong Sheng Koay"
   - label: "In Malaysia"
-    value: "Koay Yong Sheng — family name first, per Chinese culture! and a mix of different languages, per Malaysian chaos"
+    value: "Koay Yong Sheng — (Family name first per Chinese culture! A mix of different pronounciation per Malaysian rojak chaos!)"
   - label: "Given name"
     value: "Yong Sheng"
   - label: "Family name"
