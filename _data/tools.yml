@@ -1,0 +1,23 @@
+# --- One entry per tool/demo. website and github/huggingface are optional — omit a line to hide that link. ---
+
+- name: "LawSearch"
+  description: >
+    An open-source symbolic regression engine tuned for physical systems —
+    built-in priors for units, symmetries, and conservation laws so the
+    search doesn't waste time on formulas that can't be physical.
+  website: "#"
+  github: "#"
+  huggingface: "#"
+
+- name: "EqnBench"
+  description: >
+    A benchmark suite of synthetic physical systems for testing whether a
+    discovered equation generalizes beyond the range it was trained on.
+  github: "#"
+
+- name: "ProofSketch"
+  description: >
+    A small model that turns a discovered symbolic law into a sketch of why
+    it should be true, checked step-by-step against known conservation
+    principles.
+  huggingface: "#"

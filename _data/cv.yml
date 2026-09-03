@@ -1,0 +1,45 @@
+# --- Your CV, section by section. "detail" lines are optional. ---
+
+pdf: "assets/cv.pdf"   # drop your real CV PDF at this path
+
+education:
+  - period: "2022 — present"
+    what: "PhD in Physics"
+    where: "Your University"
+    detail: "Thesis: machine-learned symbolic discovery for physical law recovery."
+  - period: "2020 — 2022"
+    what: "MSc in Theoretical Physics"
+    where: "Your Previous University"
+  - period: "2017 — 2020"
+    what: "BSc in Physics, minor in Computer Science"
+    where: "Your Undergraduate Institution"
+
+positions:
+  - period: "2022 — present"
+    what: "Graduate Researcher"
+    where: "Your Lab, Your University"
+    detail: "Symbolic regression and program synthesis for physical law discovery."
+
+teaching:
+  - period: "Fall 2024, 2025"
+    what: "Computational Methods in Physics — Teaching Assistant"
+    where: "Your University"
+    detail: "Weekly labs on numerical methods, symbolic computation, and ML basics for ~40 undergraduates."
+  - period: "2023 — present"
+    what: "Undergraduate research mentoring"
+    detail: "Supervised 3 undergraduate projects on symbolic regression for physics."
+
+awards:
+  - period: "2024"
+    what: "Graduate Research Fellowship"
+  - period: "2023"
+    what: "Best Student Talk, Your Conference"
+
+skills:
+  - "PyTorch"
+  - "JAX"
+  - "Symbolic regression"
+  - "Program synthesis"
+  - "SymPy"
+  - "C++"
+  - "HPC / SLURM"

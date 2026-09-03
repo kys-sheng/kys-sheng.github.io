@@ -1,0 +1,76 @@
+---
+layout: default
+title: Full CV
+---
+{% assign p = site.data.profile %}
+{% assign cv = site.data.cv %}
+
+<p class="kicker">Curriculum Vitae</p>
+<h1>{{ p.name }} <span class="name-zh">（{{ p.name_zh }}）</span></h1>
+<p class="role">{{ p.tagline }}</p>
+<a class="cv-download" href="{{ cv.pdf | relative_url }}" download>Download PDF</a>
+
+<section>
+  <h2>Education</h2>
+  {% for e in cv.education %}
+  <div class="cv-entry">
+    <div class="when">{{ e.period }}</div>
+    <div class="what">{{ e.what }}</div>
+    {% if e.where %}<div class="where">{{ e.where }}</div>{% endif %}
+    {% if e.detail %}<p>{{ e.detail }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Research positions</h2>
+  {% for e in cv.positions %}
+  <div class="cv-entry">
+    <div class="when">{{ e.period }}</div>
+    <div class="what">{{ e.what }}</div>
+    {% if e.where %}<div class="where">{{ e.where }}</div>{% endif %}
+    {% if e.detail %}<p>{{ e.detail }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Publications</h2>
+  {% for pub in site.data.publications %}
+  <div class="pub">
+    <div class="pub-title">{{ pub.title }}</div>
+    <div class="pub-meta">{{ pub.authors }} — {{ pub.venue }}</div>
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Teaching</h2>
+  {% for e in cv.teaching %}
+  <div class="cv-entry">
+    <div class="when">{{ e.period }}</div>
+    <div class="what">{{ e.what }}</div>
+    {% if e.where %}<div class="where">{{ e.where }}</div>{% endif %}
+    {% if e.detail %}<p>{{ e.detail }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Awards &amp; fellowships</h2>
+  {% for e in cv.awards %}
+  <div class="cv-entry">
+    <div class="when">{{ e.period }}</div>
+    <div class="what">{{ e.what }}</div>
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    {% for s in cv.skills %}
+    <span class="skill">{{ s }}</span>
+    {% endfor %}
+  </div>
+</section>

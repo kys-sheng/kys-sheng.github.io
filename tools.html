@@ -1,0 +1,24 @@
+---
+layout: default
+title: Tools
+---
+
+<p class="kicker">Software &amp; Demos</p>
+<h1>Tools</h1>
+<p class="role">Things I've built, each with a plain-language description and links to the live site and the code.</p>
+
+<section>
+  <div class="tool-grid">
+    {% for t in site.data.tools %}
+    <div class="tool">
+      <div class="tool-name">{{ t.name }}</div>
+      <div class="tool-desc">{{ t.description }}</div>
+      <div class="tool-links">
+        {% if t.website %}<a href="{{ t.website }}" target="_blank" rel="noopener">website ↗</a>{% endif %}
+        {% if t.github %}<a href="{{ t.github }}" target="_blank" rel="noopener">github ↗</a>{% endif %}
+        {% if t.huggingface %}<a href="{{ t.huggingface }}" target="_blank" rel="noopener">huggingface ↗</a>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

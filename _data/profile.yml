@@ -1,0 +1,37 @@
+# --- Edit this file to update your name, bio, photo, and contact links. ---
+
+name: "K. Y. Sheng"
+name_zh: "沈國瑜"          # your name in Mandarin, shown in brackets next to your name
+tagline: "PhD Candidate — AI for Symbolic Discovery in Physics"
+
+# One or more paragraphs. Add a new "- >" block for each paragraph.
+bio:
+  - >
+    I build machine learning systems that search for interpretable, symbolic
+    descriptions of physical phenomena — conservation laws, closed-form
+    potentials, effective equations — directly from data and simulation,
+    rather than opaque black-box fits.
+  - >
+    My background spans physics and computer science, and most of my work
+    sits at the point where a learned model has to hand back something a
+    physicist can actually check by hand.
+
+# Path to your photo. Drop a real image at assets/profile.jpg and change this.
+photo: "assets/profile-placeholder.svg"
+
+# Shown on the Contact page.
+office: "Room XXX, Physics Building, Your University, Your City"
+office_email: "you@example.edu"
+
+# Shown as the link row on the Home page.
+links:
+  - label: "email"
+    url: "mailto:you@example.edu"
+  - label: "arXiv"
+    url: "https://arxiv.org/a/your_id"
+  - label: "InspireHEP"
+    url: "https://inspirehep.net/authors/your_id"
+  - label: "GitHub"
+    url: "https://github.com/kys-sheng"
+  - label: "Scholar"
+    url: "https://scholar.google.com/citations?user=your_id"

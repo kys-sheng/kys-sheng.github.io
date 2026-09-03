@@ -1,0 +1,28 @@
+# --- One entry per publication. Copy a block below and edit it to add a new paper. ---
+
+- title: "Symbolic regression recovers conserved quantities from raw trajectories"
+  authors: "K. Y. Sheng, A. Okafor, R. Lindqvist"
+  venue: "arXiv:25xx.xxxxx"
+  link: "#"
+  popsci: >
+    Handed nothing but position and momentum readings from a simulated
+    pendulum, our search procedure rediscovers energy conservation as a
+    compact algebraic expression — no physics textbook required.
+
+- title: "Neuro-symbolic program synthesis for closed-form potentials"
+  authors: "K. Y. Sheng, R. Lindqvist"
+  venue: "Phys. Rev. Research, 2024"
+  link: "#"
+  popsci: >
+    A hybrid search lets a neural network propose candidate equations while
+    a symbolic solver checks them exactly, cutting the space of "plausible
+    physics" down to the handful of formulas that actually fit.
+
+- title: "When does a learned law generalize? A benchmark for symbolic discovery"
+  authors: "K. Y. Sheng"
+  venue: "in preparation"
+  link: "#"
+  popsci: >
+    Most symbolic-regression benchmarks test curve-fitting, not discovery.
+    This one asks a harder question: does the recovered formula still hold
+    outside the range it was fit on?
