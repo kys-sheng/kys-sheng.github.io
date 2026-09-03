@@ -27,7 +27,9 @@
 </div>
 
 <footer class="site-footer">
-  <p>Built with Claude Code. Not a web design person :).</p>
+  <p>{{ site.data.site.footer_note }}</p>
+  <p class="last-updated">Last updated {{ site.time | date: "%-d %B %Y" }}</p>
+  <p class="copyright">&copy; {{ site.time | date: "%Y" }} {{ site.data.profile.name }}. All rights reserved.</p>
 </footer>
 
 </body>

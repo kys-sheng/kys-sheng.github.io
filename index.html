@@ -52,3 +52,15 @@ title: Home
   {% endfor %}
   <p style="margin-top:1.2rem"><a href="{{ '/publications.html' | relative_url }}">All publications →</a></p>
 </section>
+
+<section>
+  <h2>Fun fact: my name</h2>
+  <dl class="name-note">
+    {% for row in p.name_fun_fact %}
+    <div class="name-note-row">
+      <dt>{{ row.label }}</dt>
+      <dd>{{ row.value }}</dd>
+    </div>
+    {% endfor %}
+  </dl>
+</section>
