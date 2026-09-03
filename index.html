@@ -16,6 +16,26 @@ title: Home
 <p>{{ para }}</p>
 {% endfor %}
 
+<h3 class="subhead">Journey so far</h3>
+<ol class="journey-list">
+  {% for stop in p.journey %}
+  <li class="journey-stop{% if stop.current %} is-current{% endif %}">
+    <div class="journey-place">{{ stop.place }}</div>
+    <div class="journey-role">{{ stop.role }}</div>
+    {% if stop.visits %}
+    <ul class="journey-visits">
+      {% for v in stop.visits %}
+      <li>
+        <div class="journey-place">{{ v.place }}</div>
+        <div class="journey-role">{{ v.role }}</div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+
 <div class="links">
   {% for link in p.links %}
   <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
