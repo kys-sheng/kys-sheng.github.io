@@ -18,15 +18,15 @@ journey:
   - place: "Penang 🏝️, Malaysia 🇲🇾"
     role: "Grew up here — #penangonebetter"
   - place: "Universiti Malaya, KL/PJ, Malaysia 🇲🇾"
-    role: "BSc in Physics"
+    role: "BSc in Physics (Theoretical/Computational Material Science)"
   - place: "Academia Sinica, Taiwan 🇹🇼"
-    role: "Research Internship"
+    role: "Research Internship (Theoretical/Computational Material Science)"
   - place: "Universität Bonn, Germany 🇩🇪"
-    role: "MSc in Physics"
+    role: "MSc in Physics (Theoretical High Energy Physics)"
   - place: "Aveiro University, Portugal 🇵🇹"
-    role: "Research Assistantship"
+    role: "Research Assistantship (Theoretical High Energy Physics)"
   - place: "Uppsala University, Sweden 🇸🇪"
-    role: "PhD Candidate"
+    role: "PhD Candidate (AI+Theoretical High Energy Physics)"
     current: true
     # a stint that happened *during* this stop, not after it
     visits:

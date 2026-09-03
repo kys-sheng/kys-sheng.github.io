@@ -4,10 +4,18 @@
 - title: "Generating particle physics Lagrangians with transformers"
   authors: "<strong>Y. S. Koay</strong>, R. Enberg, S. Moretti, J. E. Camargo-Molina"
   venue: "SciPost Phys. 21, 024 (2026)"
-  link: "https://arxiv.org/abs/2501.09729"
+  link: "https://doi.org/10.21468/SciPostPhys.21.1.024"
   popsci: >
     Can AI write the equations that describe universes? Yes — and better than I could as a master's student. 
-    A Lagrangian is the compact formula that defines a particle physics model, and it works a lot like language: fields are the words, the terms built from them are the sentences, and symmetry is the grammar holding it all together. Change one word and the sentence means something else; change one term and you change everything the model predicts, from how the universe evolved to what we should see in today's experiments. We taught a transformer that grammar — and it writes valid Lagrangians for particle content it has never seen.
+    A Lagrangian is the compact formula that defines a particle physics model, and it works a lot like language: fields are the words, the terms built from them are the sentences, and symmetry is the grammar holding it all together. Change one word and the sentence means something else; change one term and you change everything the model predicts, from how the universe evolved to what we should see in today's experiments. We taught a transformer that grammar — and it writes valid Lagrangians for particle content it has never seen. Main contribution by Me and Eliel!
+
+- title: "Mono-X Signal Characterization from Two-component Dark Matter Using a Convolutional Neural Network"
+  authors: "M. F. Costa, <strong>Y. S. Koay</strong>, S. Moretti"
+  venue: "arXiv:2608.03975 [hep-ph], 2026"
+  link: "https://arxiv.org/abs/2608.03975"
+  popsci: >
+    Tried to use Convolutional Neural Networks to see whether we can detect dark matter and infer its properties if one or more species are present at colliders. 
+    Main contribution by Max!
 
 - title: "The ABC of RPV III: Classification of R-parity Violating Signatures from LQD Couplings and their Coverage at the LHC"
   authors: "H. K. Dreiner, <strong>Y. S. Koay</strong>, T. Potter, M. Schürmann, R. Sengupta, A. Shah, N. Strobbe"
@@ -19,17 +27,17 @@
 - title: "The ABC of RPV. Part II. Classification of R-parity violating signatures from UDD couplings and their coverage at the LHC"
   authors: "H. K. Dreiner, M. Hank, <strong>Y. S. Koay</strong>, M. Schürmann, R. Sengupta, A. Shah, N. Strobbe, E. Thomson"
   venue: "JHEP 06 (2025) 258"
-  link: "https://arxiv.org/abs/2503.03830"
+  link: "https://doi.org/10.1007/JHEP06(2025)258"
   popsci: >
     2nd work in the ABC of RPV series, this time for the UDD couplings. Main contribution by Rhitaja, Apoorva and Martin!
 
 - title: "The ABC of RPV: classification of R-parity violating signatures at the LHC for small couplings"
   authors: "H. K. Dreiner, <strong>Y. S. Koay</strong>, D. Köhler, V. M. Lozano, J. Montejo Berlingen, S. Nangia, N. Strobbe"
   venue: "JHEP 07 (2023) 215"
-  link: "https://arxiv.org/abs/2306.07317"
+  link: "https://doi.org/10.1007/JHEP07(2023)215"
   popsci: >
-    R-parity violating supersymmetry has too many possible signatures to look for in the collider. 
+    First work of the ABC of RPV series:  R-parity violating supersymmetry has too many possible signatures to look for in the collider. 
     Instead we classify what the theory can produce into a finite number of collider signatures. 
-    14!~9·10^10  possible hierarchies and corresponding search possibilities reduced to 6 distinct signatures.
-    We showed for LLE case here. I wrote the package to look for the signatures and did the collider analysis for the LLE case.
+    14!~9·10^10 possible hierarchies and corresponding search possibilities reduced to 6 distinct signatures.
+    We showed for LLE case here. I wrote the abc-rpv package to look for the signatures and did part of the collider analysis for the LLE case.
     Idea and main contribution by Saurabh! 

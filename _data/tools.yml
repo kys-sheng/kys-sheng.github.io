@@ -1,23 +1,43 @@
-# --- One entry per tool/demo. website and github/huggingface are optional — omit a line to hide that link. ---
+# --- One entry per tool/demo. website, github, huggingface, model and dataset are optional — omit a line to hide that link. ---
 
-- name: "LawSearch"
+- name: "abc-rpv"
   description: >
-    An open-source symbolic regression engine tuned for physical systems —
-    built-in priors for units, symmetries, and conservation laws so the
-    search doesn't waste time on formulas that can't be physical.
-  website: "#"
-  github: "#"
-  huggingface: "#"
+    A Python library for the ABC of RPV programme: it takes R-parity violating
+    MSSM scenarios with small couplings and works out which collider signature
+    they land in, so an enormous space of possible hierarchies collapses to a
+    handful of things you can actually search for at the LHC. One can go from couplings to signatures or signatures to possible couplings.
+  github: "https://github.com/kys-sheng/abc-rpv"
 
-- name: "EqnBench"
+- name: "BART-L Demo"
   description: >
-    A benchmark suite of synthetic physical systems for testing whether a
-    discovered equation generalizes beyond the range it was trained on.
-  github: "#"
+    A live demo of the BART-Lagrangian model from our SciPost paper. Give it the particle content you care about and the transformer writes out valid
+    particle-physics Lagrangians for it. Backend by Me, Frontend by Eliel. The model is also available on Hugging Face.
+  huggingface: "https://huggingface.co/spaces/JoseEliel/generate-lagrangians"
+  model: "https://huggingface.co/JoseEliel/BART-Lagrangian"
+  dataset: "https://huggingface.co/datasets/JoseEliel/lagrangian_generation"
 
-- name: "ProofSketch"
+- name: "Theory Space Navigation — BART-L"
   description: >
-    A small model that turns a discovered symbolic law into a sketch of why
-    it should be true, checked step-by-step against known conservation
-    principles.
-  huggingface: "#"
+    A look inside the BART-Lagrangian model rather than at its output: by
+    steering activations we walk through the model's latent space to see how it
+    organises theories internally. Currently a fixed guided example, with
+    interactive controls planned.
+  huggingface: "https://huggingface.co/spaces/kys-sheng/TheorySpaceNavigationBARTL"
+  model: "https://huggingface.co/JoseEliel/BART-Lagrangian"
+
+- name: "RACNN Bump Hunt Demo"
+  description: >
+    An interactive bump hunt with an ensemble RACNN-Classiflows model. Change the
+    signal position, width, and search window, and watch the histogram, the
+    ensemble posteriors for signal+background versus background-only, and other evaluation metrics calculated in real time.
+  huggingface: "https://huggingface.co/spaces/kys-sheng/racnn_bumphunt_demo"
+
+- name: "GNN Interactive Viz"
+  description: >
+    Two sets of browser-based teaching demos, LLM-coded from my own designs.
+    For GNNs: build a directed kNN graph by hand and watch messages get passed,
+    aggregated, and turned into updated node embeddings. For transformers: an
+    attention walkthrough that treats IceCube detector hits as tokens, from
+    input to final prediction.
+  website: "https://kys-sheng.github.io/gnn_interactive_viz/"
+  github: "https://github.com/kys-sheng/gnn_interactive_viz"
