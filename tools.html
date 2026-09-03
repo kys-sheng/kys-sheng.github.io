@@ -1,73 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tools — K. Y. Sheng</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+title: Tools
+---
 
-<header class="site-header">
-  <div class="inner">
-    <a class="brand" href="index.html">K. Y. Sheng</a>
-    <ul class="site-nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="tools.html" aria-current="page">Tools</a></li>
-    </ul>
+<p class="kicker">Software &amp; Demos</p>
+<h1>Tools</h1>
+<p class="role">Things I've built, each with a plain-language description and links to the live site and the code.</p>
+
+<section>
+  <div class="tool-grid">
+    {% for t in site.data.tools %}
+    <div class="tool">
+      <div class="tool-name">{{ t.name }}</div>
+      <div class="tool-desc">{{ t.description }}</div>
+      <div class="tool-links">
+        {% if t.website %}<a href="{{ t.website }}" target="_blank" rel="noopener">website ↗</a>{% endif %}
+        {% if t.github %}<a href="{{ t.github }}" target="_blank" rel="noopener">github ↗</a>{% endif %}
+        {% if t.huggingface %}<a href="{{ t.huggingface }}" target="_blank" rel="noopener">huggingface ↗</a>{% endif %}
+      </div>
+    </div>
+    {% endfor %}
   </div>
-</header>
-
-<div class="wrap">
-  <p class="kicker">Software &amp; Visualization</p>
-  <h1>Tools</h1>
-  <p class="role">Interactive demos, notebooks, and visualization tools from my research — and a few I just find useful.</p>
-
-  <section>
-    <h2>Built by me</h2>
-    <div class="tool-grid">
-      <a class="tool" href="#" target="_blank" rel="noopener">
-        <div class="tool-name">Plaquette Viewer <span class="arrow">→</span></div>
-        <div class="tool-desc">Interactive 3D viewer for SU(3) lattice configurations — inspect plaquette values and flow trajectories in the browser.</div>
-        <span class="tool-tag">WebGL · demo</span>
-      </a>
-      <a class="tool" href="#" target="_blank" rel="noopener">
-        <div class="tool-name">flowmc <span class="arrow">→</span></div>
-        <div class="tool-desc">A small JAX library for building gauge-equivariant normalizing flows, used in my papers above.</div>
-        <span class="tool-tag">github · library</span>
-      </a>
-      <a class="tool" href="#" target="_blank" rel="noopener">
-        <div class="tool-name">Autocorrelation Explorer <span class="arrow">→</span></div>
-        <div class="tool-desc">Notebook widget for comparing integrated autocorrelation times across samplers on the same Markov chain.</div>
-        <span class="tool-tag">jupyter · notebook</span>
-      </a>
-    </div>
-  </section>
-
-  <section>
-    <h2>Tools I use</h2>
-    <div class="tool-grid">
-      <a class="tool" href="https://plotly.com" target="_blank" rel="noopener">
-        <div class="tool-name">Plotly <span class="arrow">→</span></div>
-        <div class="tool-desc">For anything that needs to stay interactive after it leaves a notebook.</div>
-      </a>
-      <a class="tool" href="https://www.paraview.org" target="_blank" rel="noopener">
-        <div class="tool-name">ParaView <span class="arrow">→</span></div>
-        <div class="tool-desc">Volumetric rendering of field configurations from lattice simulations.</div>
-      </a>
-      <a class="tool" href="https://weights-biases.ai" target="_blank" rel="noopener">
-        <div class="tool-name">Weights &amp; Biases <span class="arrow">→</span></div>
-        <div class="tool-desc">Tracking training runs across sampler architectures.</div>
-      </a>
-    </div>
-  </section>
-</div>
-
-<footer class="site-footer">
-  <p>&copy; 2026 K. Y. Sheng</p>
-</footer>
-
-</body>
-</html>
+</section>

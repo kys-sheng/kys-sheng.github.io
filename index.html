@@ -1,66 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>K. Y. Sheng</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+---
+layout: default
+title: Home
+---
+{% assign p = site.data.profile %}
 
-<header class="site-header">
-  <div class="inner">
-    <a class="brand" href="index.html">K. Y. Sheng</a>
-    <ul class="site-nav">
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="tools.html">Tools</a></li>
-    </ul>
+<div class="profile-row">
+  <img class="avatar" src="{{ p.photo | relative_url }}" alt="Photo of {{ p.name }}">
+  <div>
+    <p class="kicker">{{ p.tagline }}</p>
+    <h1>{{ p.name }} <span class="name-zh">（{{ p.name_zh }}）</span></h1>
   </div>
-</header>
-
-<div class="wrap">
-  <p class="kicker">Theoretical Particle Physics &amp; Machine Learning</p>
-  <h1>K. Y. Sheng</h1>
-  <p class="role">PhD candidate — lattice field theory with learned samplers</p>
-
-  <p>I work on flow-based and equivariant samplers for lattice gauge theory, and on where the symmetries physicists already know can be built into a network rather than learned from data.</p>
-
-  <div class="links">
-    <a href="mailto:you@example.edu">email</a>
-    <a href="https://arxiv.org/a/your_id" target="_blank" rel="noopener">arXiv</a>
-    <a href="https://github.com/kys-sheng" target="_blank" rel="noopener">github</a>
-    <a href="https://scholar.google.com/citations?user=your_id" target="_blank" rel="noopener">scholar</a>
-  </div>
-
-  <section>
-    <h2>Selected work</h2>
-    <div class="pub">
-      <div class="pub-title">Gauge-equivariant flows for SU(3) lattice sampling</div>
-      <div class="pub-meta">with A. Okafor, R. Lindqvist — arXiv:25xx.xxxxx</div>
-    </div>
-    <div class="pub">
-      <div class="pub-title">Learned discretizations preserve which symmetries?</div>
-      <div class="pub-meta">solo — in preparation</div>
-    </div>
-    <div class="pub">
-      <div class="pub-title">A note on critical slowing down in normalizing-flow samplers</div>
-      <div class="pub-meta">with R. Lindqvist — Phys. Rev. D (2024)</div>
-    </div>
-    <p style="margin-top:1.2rem"><a href="cv.html">Full CV →</a></p>
-  </section>
-
-  <section>
-    <h2>Notes</h2>
-    <p>Short, dated write-ups — closer to a lab notebook than a blog.</p>
-    <div class="note">2025-11-02 — why HMC step-size tuning and flow training are the same problem wearing different clothes</div>
-  </section>
 </div>
 
-<footer class="site-footer">
-  <p>&copy; 2026 K. Y. Sheng</p>
-</footer>
+{% for para in p.bio %}
+<p>{{ para }}</p>
+{% endfor %}
 
-</body>
-</html>
+<div class="links">
+  {% for link in p.links %}
+  <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+  {% endfor %}
+</div>
+
+<section>
+  <h2>Recent publications</h2>
+  {% for pub in site.data.publications limit:3 %}
+  <div class="pub">
+    <div class="pub-title"><a href="{{ pub.link }}">{{ pub.title }}</a></div>
+    <div class="pub-meta">{{ pub.authors }} — {{ pub.venue }}</div>
+  </div>
+  {% endfor %}
+  <p style="margin-top:1.2rem"><a href="{{ '/publications.html' | relative_url }}">All publications →</a></p>
+</section>
