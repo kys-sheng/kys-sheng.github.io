@@ -1,5 +1,7 @@
 # Personal website
 
+Live site: https://kys-sheng.github.io
+
 All page content lives in `_data/*.yml` — edit those files, not the `.html` ones, to update the site.
 
 | File | Controls |
