@@ -6,3 +6,11 @@ footer_note: "Built with Claude Code. Not a web design person :)."
 # automatically from the site build time / current year — nothing to edit
 # for those, they update on their own every time the site is rebuilt (i.e.
 # every time you push a change).
+
+# Browser tab icon (favicon). type is either "emoji" or "initials" — only
+# the matching field below is used, so you can leave the other one as-is
+# and just flip type whenever you want to switch.
+favicon:
+  type: "initials"
+  emoji: "🔬"
+  initials: "YSK"

@@ -6,6 +6,27 @@
 <title>{{ page.title }} — {{ site.data.profile.name }}</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+SC:wght@500&display=swap">
 <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+{% assign favicon = site.data.site.favicon %}
+{% if favicon.type == "initials" %}
+  {% assign favicon_text = favicon.initials %}
+{% else %}
+  {% assign favicon_text = favicon.emoji %}
+{% endif %}
+<script>
+(function(){
+  var text = {{ favicon_text | jsonify }};
+  var fontSize = text.length > 2 ? 24 : 34;
+  var svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">' +
+    '<rect width="64" height="64" rx="14" fill="#8a3324"/>' +
+    '<text x="32" y="42" font-size="' + fontSize + '" text-anchor="middle" ' +
+    'font-family="system-ui, sans-serif" font-weight="600" fill="#faf8f3">' + text + '</text>' +
+    '</svg>';
+  var link = document.querySelector('link[rel="icon"]') || document.createElement('link');
+  link.rel = 'icon';
+  link.href = 'data:image/svg+xml,' + encodeURIComponent(svg);
+  document.head.appendChild(link);
+})();
+</script>
 </head>
 <body>
 
