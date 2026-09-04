@@ -10,9 +10,18 @@ title: Publications
 <section>
   {% for pub in site.data.publications %}
   <div class="pub pub-full">
-    <div class="pub-title"><a href="{{ pub.link }}" target="_blank" rel="noopener">{{ pub.title }}</a></div>
+    <div class="pub-title">
+      {% if pub.link and pub.link != "" %}<a href="{{ pub.link }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+    </div>
     <div class="pub-meta">{{ pub.authors }} — {{ pub.venue }}</div>
     <p class="pub-popsci">{{ pub.popsci }}</p>
+    {% if pub.tags %}
+    <div class="pub-tags">
+      {% for tag in pub.tags %}
+      <span class="pub-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
   {% endfor %}
 </section>

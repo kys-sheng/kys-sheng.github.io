@@ -18,6 +18,9 @@ title: Full CV
     <div class="what">{{ e.what }}</div>
     {% if e.where %}<div class="where">{{ e.where }}</div>{% endif %}
     {% if e.detail %}<p>{{ e.detail }}</p>{% endif %}
+    {% if e.grade %}<div class="cv-meta">Grade: {{ e.grade }}</div>{% endif %}
+    {% if e.grant %}<div class="cv-meta">Grant: {{ e.grant }}</div>{% endif %}
+    {% if e.supervisors %}<div class="cv-meta">Supervisor(s): {{ e.supervisors }}</div>{% endif %}
   </div>
   {% endfor %}
 </section>
@@ -30,6 +33,9 @@ title: Full CV
     <div class="what">{{ e.what }}</div>
     {% if e.where %}<div class="where">{{ e.where }}</div>{% endif %}
     {% if e.detail %}<p>{{ e.detail }}</p>{% endif %}
+    {% if e.grade %}<div class="cv-meta">Grade: {{ e.grade }}</div>{% endif %}
+    {% if e.grant %}<div class="cv-meta">Grant: {{ e.grant }}</div>{% endif %}
+    {% if e.supervisors %}<div class="cv-meta">Supervisor(s): {{ e.supervisors }}</div>{% endif %}
   </div>
   {% endfor %}
 </section>
