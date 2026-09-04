@@ -8,7 +8,7 @@
   authors: "TBA"
   venue: "In preparation"
   link: ""
-  tags: ["Machine Learning",  "Symbolic Generation", "Systematic Search", "Foundation Models"]
+  tags: ["Machine Learning",  "Symbolic Generation", "Systematic Search", "Foundation Models","BART-L"]
   popsci: >
     Details to be announced.
 
@@ -16,7 +16,7 @@
   authors: "TBA"
   venue: "In preparation"
   link: ""
-  tags: ["Machine Learning",  "Inverse Problem", "Foundation Models"]
+  tags: ["Machine Learning",  "Inverse Problem", "Foundation Models","RACNN"]
   popsci: >
     Details to be announced.
 
