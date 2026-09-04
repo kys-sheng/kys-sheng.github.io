@@ -169,6 +169,11 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
 .pub-full:last-child{border-bottom:none}
 .pub-full::before{content:none}
 .pub-popsci{margin-top:.7rem; font-size:.96rem; max-width:68ch}
+.pub-tags{display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.9rem}
+.pub-tag{
+  font-family:"IBM Plex Mono", monospace; font-size:.72rem; color:var(--muted);
+  border:1px solid var(--rule); border-radius:20px; padding:.25rem .7rem;
+}
 
 .note{
   font-family:"IBM Plex Mono", monospace; font-size:.82rem; color:var(--muted);
@@ -184,6 +189,10 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
 .cv-entry .what{font-weight:600; margin-top:.2rem}
 .cv-entry .where{color:var(--muted); font-size:.95rem}
 .cv-entry p{margin-top:.5rem; font-size:.96rem}
+.cv-entry .cv-meta{
+  margin-top:.35rem; color:var(--muted); font-size:.85rem;
+  font-family:"IBM Plex Mono", monospace;
+}
 .skills{display:flex; flex-wrap:wrap; gap:.5rem}
 .skill{
   font-family:"IBM Plex Mono", monospace; font-size:.78rem; color:var(--muted);
