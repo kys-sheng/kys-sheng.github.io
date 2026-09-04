@@ -1,0 +1,22 @@
+---
+layout: default
+title: Stuff
+---
+{% assign s = site.data.stuff %}
+
+<p class="kicker">The Junk Drawer</p>
+<h1>Stuff</h1>
+<p class="role">{{ s.under_construction }}</p>
+
+{% for sec in s.sections %}
+<section>
+  <h2>{{ sec.heading }}</h2>
+  {% for item in sec.items %}
+  <div class="stuff-item">
+    {% if item.title and item.title != "" %}<div class="stuff-title">{{ item.title }}</div>{% endif %}
+    <p class="stuff-text">{{ item.text }}</p>
+    {% if item.source and item.source != "" %}<div class="stuff-source">— {{ item.source }}</div>{% endif %}
+  </div>
+  {% endfor %}
+</section>
+{% endfor %}
