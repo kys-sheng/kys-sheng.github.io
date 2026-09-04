@@ -32,7 +32,13 @@ title: Talks
 <section>
   <h2>QR code</h2>
   {% if t.qr_code and t.qr_code != "" %}
-  <img class="qr-code" src="{{ t.qr_code | relative_url }}" alt="QR code">
+    {% if t.qr_link and t.qr_link != "" %}
+    <a href="{{ t.qr_link }}" target="_blank" rel="noopener" aria-label="Open link">
+      <img class="qr-code" src="{{ t.qr_code | relative_url }}" alt="QR code">
+    </a>
+    {% else %}
+    <img class="qr-code" src="{{ t.qr_code | relative_url }}" alt="QR code">
+    {% endif %}
   {% else %}
   <div class="qr-code-placeholder">QR code coming soon</div>
   {% endif %}

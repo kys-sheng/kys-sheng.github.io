@@ -8,6 +8,9 @@ under_construction: "This page is under construction — check back soon for act
 # to show a placeholder box instead.
 qr_code: "assets/extended.svg"
 
+# Where clicking the QR code image goes. Leave blank to make it unclickable.
+qr_link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+
 # One entry per talk. Copy a block below and replace the XXX placeholders
 # when you have a real talk to add. indico/slides are optional — omit a
 # line to hide that link.

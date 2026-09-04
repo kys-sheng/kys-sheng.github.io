@@ -41,6 +41,9 @@ journey:
 # Path to your photo. Drop a real image at assets/profile.jpg and change this.
 photo: "assets/profile_pic2.jpg"
 
+# Optional caption shown under the photo when it's clicked open. Leave blank for none.
+photo_caption: "I think Irma likes my face. :)"
+
 # Shown on the Contact page.
 office: "Ångströmlaboratoriet, Uppsala University, Sweden"
 office_email: "yongsheng.koay.REPLACE_THIS_WITH_AN_ADD.physics.uu.se"
@@ -88,3 +91,13 @@ name_fun_fact_block2:
 name_fun_fact_outro: >
   Don't ask my Malaysian friends what they call me, they will give you
   anything but the real thing :)
+
+# Add as many extra sections to the bottom of Home as you like — each one
+# just needs a heading and one or more paragraphs. They show up in this
+# order, after "Fun fact: my name". Delete the "-" lines below to add none.
+# extra_sections:
+#   - heading: "Another section"
+#     body:
+#       - "First paragraph."
+#       - "Second paragraph."
+extra_sections: []

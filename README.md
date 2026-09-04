@@ -11,8 +11,11 @@ All page content lives in `_data/*.yml` — edit those files, not the `.html` on
 | `_data/cv.yml` | Full CV page (education, positions, teaching, awards, skills) — also points to your CV PDF |
 | `_data/tools.yml` | Tools page (each entry: name, description, website/GitHub/HuggingFace links) |
 | `_data/talks.yml` | Talks page (each entry: title, event, date, Indico/slides links) — also the QR code image path |
+| `_data/stuff.yml` | Stuff page (each entry: title, text, optional source) — random papers/quotes/fun facts/blurbs |
 
-To add a new publication, tool, or talk, copy an existing entry in the file and edit it — the layout picks it up automatically.
+To add a new publication, tool, talk, or stuff item, copy an existing entry in the file and edit it — the layout picks it up automatically.
+
+To add more sections to the bottom of Home without touching any HTML, add entries to `extra_sections:` in `profile.yml` — each just needs a `heading` and one or more `body` paragraphs.
 
 To add your QR code: drop the image anywhere under `assets/` and set the `qr_code:` field in `talks.yml` to that path.
 

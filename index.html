@@ -5,12 +5,33 @@ title: Home
 {% assign p = site.data.profile %}
 
 <div class="profile-row">
-  <img class="avatar" src="{{ p.photo | relative_url }}" alt="Photo of {{ p.name }}">
+  <button type="button" class="avatar-trigger" aria-haspopup="dialog" aria-controls="avatar-dialog">
+    <img class="avatar" src="{{ p.photo | relative_url }}" alt="Photo of {{ p.name }}">
+  </button>
   <div>
     <p class="kicker">{{ p.tagline }}</p>
     <h1>{{ p.name }} <span class="name-zh">（{{ p.name_zh }}）</span></h1>
   </div>
 </div>
+
+<dialog id="avatar-dialog" class="avatar-dialog">
+  <button type="button" class="avatar-dialog-close" aria-label="Close">&times;</button>
+  <img src="{{ p.photo | relative_url }}" alt="Photo of {{ p.name }}">
+  {% if p.photo_caption and p.photo_caption != "" %}
+  <p class="avatar-dialog-caption">{{ p.photo_caption }}</p>
+  {% endif %}
+</dialog>
+<script>
+(function(){
+  var dialog = document.getElementById('avatar-dialog');
+  var trigger = document.querySelector('.avatar-trigger');
+  var closeBtn = document.querySelector('.avatar-dialog-close');
+  if (!dialog || !trigger || !closeBtn) return;
+  trigger.addEventListener('click', function(){ dialog.showModal(); });
+  closeBtn.addEventListener('click', function(){ dialog.close(); });
+  dialog.addEventListener('click', function(e){ if (e.target === dialog) dialog.close(); });
+})();
+</script>
 
 {% for para in p.bio %}
 <p>{{ para }}</p>
@@ -76,3 +97,12 @@ title: Home
   </dl>
   <p class="fun-fact-outro">{{ p.name_fun_fact_outro }}</p>
 </section>
+
+{% for sec in p.extra_sections %}
+<section>
+  <h2>{{ sec.heading }}</h2>
+  {% for para in sec.body %}
+  <p>{{ para }}</p>
+  {% endfor %}
+</section>
+{% endfor %}
