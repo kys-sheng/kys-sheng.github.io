@@ -8,6 +8,15 @@
   authors: "TBA"
   venue: "In preparation"
   link: ""
+  tags: ["Machine Learning",  "Symbolic Generation", "Systematic Search", "Foundation Models"]
+  popsci: >
+    Details to be announced.
+
+- title: "TBA"
+  authors: "TBA"
+  venue: "In preparation"
+  link: ""
+  tags: ["Machine Learning",  "Inverse Problem", "Foundation Models"]
   popsci: >
     Details to be announced.
 
@@ -15,7 +24,7 @@
   authors: "<strong>Y. S. Koay</strong>, R. Enberg, S. Moretti, J. E. Camargo-Molina"
   venue: "SciPost Phys. 21, 024 (2026)"
   link: "https://doi.org/10.21468/SciPostPhys.21.1.024"
-  tags: ["Machine Learning", "Transformers", "Symbolic Generation", "Particle Physics"]
+  tags: ["Machine Learning", "Symbolic Generation", "Foundation Models"]
   popsci: >
     Can AI write the equations that describe universes? Yes — and better than I could as a master's student.
     A Lagrangian is the compact formula that defines a particle physics model, and it works a lot like language: fields are the words, the terms built from them are the sentences, and symmetry is the grammar holding it all together. Change one word and the sentence means something else; change one term and you change everything the model predicts, from how the universe evolved to what we should see in today's experiments. We taught a transformer that grammar — and it writes valid Lagrangians for particle content it has never seen. Main contribution by Me and Eliel!
@@ -24,7 +33,7 @@
   authors: "M. F. Costa, <strong>Y. S. Koay</strong>, S. Moretti"
   venue: "arXiv:2608.03975 [hep-ph], 2026"
   link: "https://arxiv.org/abs/2608.03975"
-  tags: ["Dark Matter", "Convolutional Neural Networks", "Collider Phenomenology"]
+  tags: ["Machine Learning", "Inverse Problem", "Dark Matter"]
   popsci: >
     Tried to use Convolutional Neural Networks to see whether we can detect dark matter and infer its properties if one or more species are present at colliders.
     Main contribution by Max!
@@ -33,7 +42,7 @@
   authors: "H. K. Dreiner, <strong>Y. S. Koay</strong>, T. Potter, M. Schürmann, R. Sengupta, A. Shah, N. Strobbe"
   venue: "arXiv:2608.21033 [hep-ph], 2026"
   link: "https://arxiv.org/abs/2608.21033"
-  tags: ["R-parity Violation", "Supersymmetry", "LHC", "Collider Signatures"]
+  tags: ["Inverse Problem", "Systematic Search", "Supersymmetry"]
   popsci: >
     Final work of the ABC of RPV series, this time for the LQD couplings. Main contribution by Rhitaja, Apoorva and Martin!
 
@@ -41,7 +50,7 @@
   authors: "H. K. Dreiner, M. Hank, <strong>Y. S. Koay</strong>, M. Schürmann, R. Sengupta, A. Shah, N. Strobbe, E. Thomson"
   venue: "JHEP 06 (2025) 258"
   link: "https://doi.org/10.1007/JHEP06(2025)258"
-  tags: ["R-parity Violation", "Supersymmetry", "LHC", "Collider Signatures"]
+  tags: ["Inverse Problem", "Systematic Search", "Supersymmetry"]
   popsci: >
     2nd work in the ABC of RPV series, this time for the UDD couplings. Main contribution by Rhitaja, Apoorva and Martin!
 
@@ -49,7 +58,7 @@
   authors: "H. K. Dreiner, <strong>Y. S. Koay</strong>, D. Köhler, V. M. Lozano, J. Montejo Berlingen, S. Nangia, N. Strobbe"
   venue: "JHEP 07 (2023) 215"
   link: "https://doi.org/10.1007/JHEP07(2023)215"
-  tags: ["R-parity Violation", "Supersymmetry", "LHC", "Collider Signatures"]
+  tags: ["Inverse Problem", "Systematic Search", "Supersymmetry"]
   popsci: >
     First work of the ABC of RPV series:  R-parity violating supersymmetry has too many possible signatures to look for in the collider.
     Instead we classify what the theory can produce into a finite number of collider signatures.
