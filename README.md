@@ -23,4 +23,8 @@ To add your real photo: replace `assets/profile-placeholder.svg` with your image
 
 To add your CV: drop the PDF at `assets/cv.pdf` (or change the `pdf:` field in `cv.yml` if you name it differently).
 
+To change the browser tab icon: edit `favicon:` in `_data/site.yml` — set `type` to `"emoji"` or `"initials"` and edit the matching field; the other one can stay as-is until you switch back.
+
+`robots.txt` at the repo root asks known AI crawlers not to scrape the site, while leaving search engines free to index it — it only works against bots that choose to respect it (there's no way to force this on GitHub Pages), so add more `User-agent:` blocks there any time a new crawler shows up.
+
 This is a Jekyll site, which GitHub Pages builds automatically on push — no build step to run yourself.
