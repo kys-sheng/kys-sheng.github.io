@@ -120,3 +120,9 @@ skills:
   - "LHAPDF"
   - "SLURM"
   - "HTCondor"
+
+languages:
+  - level: "Native / Bilingual"
+    list: "English (IELTS: Band 8), Mandarin, Hokkien, Malay"
+  - level: "Competent / Novice"
+    list: "Cantonese; German (A2), Swedish (A1)"

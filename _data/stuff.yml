@@ -5,6 +5,36 @@
 
 under_construction: "This page is under construction — a home for everything else."
 
+# Link to this website's own source code, shown near the top of the page.
+repo: "https://github.com/kys-sheng/kys-sheng.github.io"
+
+# "Languages I speak-ish" fun fact, shown as a table right after "My name"
+# on the Stuff page. "link" on a row is optional.
+languages_fun_fact:
+  rows:
+    - language: "Hokkien"
+      link: "https://en.wikipedia.org/wiki/Hokkien"
+      description: "My mother tongue. The language I speak with my family and some friends. [Family: Sino-Tibetan]"
+    - language: "Mandarin"
+      link: "https://en.wikipedia.org/wiki/Mandarin_Chinese"
+      description: "The language I speak with the majority of my Malaysian friends. [Family: Sino-Tibetan]"
+    - language: "Malay"
+      link: "https://en.wikipedia.org/wiki/Malay_language"
+      description: "The national language. I speak it with non-Mandarin-speaking Malaysians, as well as for anything government-related. [Family: Austronesian]"
+    - language: "English"
+      link: "https://en.wikipedia.org/wiki/English_language"
+      description: "Widely used in Malaysia, mainly because of its lingua franca status and colonialism. [Family: Indo-European]"
+    - language: "Cantonese"
+      link: "https://en.wikipedia.org/wiki/Cantonese"
+      description: "Picked up by proxy. Exposure to Cantopop and Hong Kong dramas growing up, plus my time living in KL during my BSc. [Family: Sino-Tibetan]"
+    - language: "German"
+      link: "https://en.wikipedia.org/wiki/German_language"
+      description: "A bit, from my time in Bonn during my MSc, and also because of Annenmaykantereit. [Family: Indo-European]"
+    - language: "Swedish"
+      link: "https://en.wikipedia.org/wiki/Swedish_language"
+      description: "A bit, from my time in Uppsala during my PhD. [Family: Indo-European]"
+  note: 'I learned Mandarin, Malay, and English in school between the ages of 5 and 17, a pretty common Malaysian thing. It is also common that Malaysians tend to use more than one language per sentence, i.e. the <a href="https://en.wikipedia.org/wiki/Bahasa_Rojak" target="_blank" rel="noopener">"rojak"</a> way.'
+
 sections:
   - heading: "Fun facts"
     items:
