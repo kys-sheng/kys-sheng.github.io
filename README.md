@@ -8,7 +8,7 @@ All page content lives in `_data/*.yml` — edit those files, not the `.html` on
 |---|---|
 | `_data/profile.yml` | Name, Mandarin name, bio, photo, office/contact info, link row (email/arXiv/InspireHEP/GitHub/Scholar) |
 | `_data/publications.yml` | Publications page + "Recent publications" on Home |
-| `_data/cv.yml` | Full CV page (education, positions, teaching, awards, skills) — also points to your CV PDF |
+| `_data/cv.yml` | CV page (education, positions, teaching, other experiences, awards, skills) — also points to your CV PDF |
 | `_data/tools.yml` | Tools page (each entry: name, description, website/GitHub/HuggingFace links) |
 | `_data/talks.yml` | Talks page (each entry: title, event, date, Indico/slides links) — also the QR code image path |
 | `_data/stuff.yml` | Stuff page (each entry: title, text, optional source) — random papers/quotes/fun facts/blurbs |

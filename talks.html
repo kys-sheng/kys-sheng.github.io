@@ -1,45 +1,169 @@
 ---
 layout: default
-title: Talks
+title: Presentations
 ---
 {% assign t = site.data.talks %}
 
 <p class="kicker">Talks &amp; Slides</p>
-<h1>Talks</h1>
-<p class="role">{{ t.under_construction }}</p>
+<h1>Presentations</h1>
+<p class="role">{{ t.intro }}</p>
 
 <section>
-  <div class="tool-grid">
-    {% for talk in t.talks %}
-    <div class="tool">
-      <div class="tool-name">{{ talk.title }}</div>
-      <div class="tool-desc">{{ talk.event }} — {{ talk.date }}</div>
-      {% assign has_indico = false %}
-      {% if talk.indico and talk.indico != "" %}{% assign has_indico = true %}{% endif %}
-      {% assign has_slides = false %}
-      {% if talk.slides and talk.slides != "" %}{% assign has_slides = true %}{% endif %}
-      {% if has_indico or has_slides %}
-      <div class="tool-links">
-        {% if has_indico %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">indico ↗</a>{% endif %}
-        {% if has_slides %}<a href="{{ talk.slides }}" target="_blank" rel="noopener">slides ↗</a>{% endif %}
-      </div>
-      {% endif %}
-    </div>
-    {% endfor %}
+  <h2>Invited talks</h2>
+  <div class="table-wrap">
+    <table class="talks-table">
+      <thead>
+        <tr><th>Date</th><th></th><th>Type</th><th>Talk</th><th>Event</th></tr>
+      </thead>
+      <tbody>
+        {% for talk in t.talks %}
+        {% if talk.type contains "Invited" %}
+        <tr>
+          <td class="talks-date">{{ talk.date }}</td>
+          <td class="talks-flag">{{ talk.flag }}</td>
+          <td class="talks-type">{{ talk.type }}</td>
+          <td>
+            {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
+            {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
+          </td>
+          <td class="talks-event">{{ talk.event }}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
   </div>
 </section>
 
 <section>
-  <h2>QR code</h2>
-  {% if t.qr_code and t.qr_code != "" %}
-    {% if t.qr_link and t.qr_link != "" %}
-    <a href="{{ t.qr_link }}" target="_blank" rel="noopener" aria-label="Open link">
-      <img class="qr-code" src="{{ t.qr_code | relative_url }}" alt="QR code">
-    </a>
-    {% else %}
-    <img class="qr-code" src="{{ t.qr_code | relative_url }}" alt="QR code">
+  <h2>Plenary talks</h2>
+  <div class="table-wrap">
+    <table class="talks-table">
+      <thead>
+        <tr><th>Date</th><th></th><th>Type</th><th>Talk</th><th>Event</th></tr>
+      </thead>
+      <tbody>
+        {% for talk in t.talks %}
+        {% unless talk.type contains "Invited" %}
+          {% if talk.type contains "Plenary" %}
+          <tr>
+            <td class="talks-date">{{ talk.date }}</td>
+            <td class="talks-flag">{{ talk.flag }}</td>
+            <td class="talks-type">{{ talk.type }}</td>
+            <td>
+              {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
+              {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
+            </td>
+            <td class="talks-event">{{ talk.event }}</td>
+          </tr>
+          {% endif %}
+        {% endunless %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Contributed talks</h2>
+  <div class="table-wrap">
+    <table class="talks-table">
+      <thead>
+        <tr><th>Date</th><th></th><th>Type</th><th>Talk</th><th>Event</th></tr>
+      </thead>
+      <tbody>
+        {% for talk in t.talks %}
+        {% unless talk.type contains "Invited" or talk.type contains "Plenary" %}
+          {% if talk.type contains "Talk" %}
+            {% unless talk.type contains "Flash" %}
+            <tr>
+              <td class="talks-date">{{ talk.date }}</td>
+              <td class="talks-flag">{{ talk.flag }}</td>
+              <td class="talks-type">{{ talk.type }}</td>
+              <td>
+                {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
+                {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
+              </td>
+              <td class="talks-event">{{ talk.event }}</td>
+            </tr>
+            {% endunless %}
+          {% endif %}
+        {% endunless %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Contributed posters &amp; flash talks</h2>
+  <div class="table-wrap">
+    <table class="talks-table">
+      <thead>
+        <tr><th>Date</th><th></th><th>Type</th><th>Talk</th><th>Event</th></tr>
+      </thead>
+      <tbody>
+        {% for talk in t.talks %}
+        {% unless talk.type contains "Invited" or talk.type contains "Plenary" %}
+          {% assign is_full_talk = false %}
+          {% if talk.type contains "Talk" %}
+            {% unless talk.type contains "Flash" %}{% assign is_full_talk = true %}{% endunless %}
+          {% endif %}
+          {% unless is_full_talk %}
+          <tr>
+            <td class="talks-date">{{ talk.date }}</td>
+            <td class="talks-flag">{{ talk.flag }}</td>
+            <td class="talks-type">{{ talk.type }}</td>
+            <td>
+              {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
+              {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
+            </td>
+            <td class="talks-event">{{ talk.event }}</td>
+          </tr>
+          {% endunless %}
+        {% endunless %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Tally</h2>
+  {% assign poster_count = 0 %}
+  {% assign plenary_count = 0 %}
+  {% assign invited_count = 0 %}
+  {% assign flash_count = 0 %}
+  {% assign normal_talk_count = 0 %}
+  {% assign workshop_count = 0 %}
+  {% for talk in t.talks %}
+    {% if talk.type contains "Poster" %}{% assign poster_count = poster_count | plus: 1 %}{% endif %}
+    {% if talk.type contains "Plenary" %}{% assign plenary_count = plenary_count | plus: 1 %}{% endif %}
+    {% if talk.type contains "Invited" %}{% assign invited_count = invited_count | plus: 1 %}{% endif %}
+    {% if talk.type contains "Flash" %}{% assign flash_count = flash_count | plus: 1 %}{% endif %}
+    {% if talk.type contains "Workshop" %}{% assign workshop_count = workshop_count | plus: 1 %}{% endif %}
+    {% if talk.type contains "Talk" %}
+      {% unless talk.type contains "Plenary" or talk.type contains "Invited" or talk.type contains "Flash" %}
+        {% assign normal_talk_count = normal_talk_count | plus: 1 %}
+      {% endunless %}
     {% endif %}
-  {% else %}
-  <div class="qr-code-placeholder">QR code coming soon</div>
-  {% endif %}
+  {% endfor %}
+  <p class="role" style="margin-bottom:1.2rem">Counted straight from the list above.</p>
+  <div class="table-wrap">
+    <table class="talks-table tally-table">
+      <thead>
+        <tr><th>Category</th><th>Count</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Invited talks</td><td>≥{{ invited_count }}</td></tr>
+        <tr><td>Plenary talks</td><td>≥{{ plenary_count }}</td></tr>
+        <tr><td>Talks</td><td>≥{{ normal_talk_count }}</td></tr>
+        <tr><td>Posters</td><td>≥{{ poster_count }}</td></tr>
+        <tr><td>Flash talks</td><td>≥{{ flash_count }}</td></tr>
+        <tr><td>Workshops</td><td>≥{{ workshop_count }}</td></tr>
+        <tr><td><strong>Total</strong></td><td><strong>≥{{ t.talks | size }}</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="role" style="margin-top:1.2rem">{{ t.outro }}</p>
 </section>

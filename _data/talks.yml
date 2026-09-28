@@ -1,22 +1,141 @@
-# --- Talks page. Still under construction — replace the placeholder note   ---
-# --- and entry below once you have real talks/slides to list.              ---
+# --- Talks page. One entry per talk/poster, newest first. Copy a block   ---
+# --- below and edit it to add one. "note" and "slides" are optional.      ---
+# --- "type" is used both for display and for the tally at the bottom of  ---
+# --- the page (it looks for the words Poster/Plenary/Invited/Flash/      ---
+# --- Workshop/Talk inside it), so keep using those words when you add    ---
+# --- new entries. "flag" is a country emoji shown next to each row.       ---
 
-under_construction: "This page is under construction — check back soon for actual talks and slides."
+intro: "Selected talks, posters, and workshops — probably missing a few."
 
-# Path to a QR code image (e.g. linking to this page, or to your slides).
-# Drop the image at this path and it'll show up automatically; leave blank
-# to show a placeholder box instead.
-qr_code: "assets/extended.svg"
+# Shown at the very bottom of the page, under the tally.
+outro: "Internal talks, journal club contributions, and similar internal presentations aren't included here."
 
-# Where clicking the QR code image goes. Leave blank to make it unclickable.
-qr_link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-
-# One entry per talk. Copy a block below and replace the XXX placeholders
-# when you have a real talk to add. indico/slides are optional — omit a
-# line to hide that link.
 talks:
-  - title: "XXX"
-    event: "XXX"
-    date: "XXX"
-    indico: ""
-    slides: ""
+  - date: "Sep 2026"
+    type: "Talk"
+    title: "Steering in Theory Space: Representation Engineering of a Lagrangian Transformer"
+    event: "ML4JETS 2026, Vienna, Austria"
+    flag: "🇦🇹"
+    indico: "https://indico.global/event/15240/contributions/165352/"
+
+  - date: "Sep 2026"
+    type: "Talk"
+    title: "Fine-Tunable Region-Conditioned Simulation-Based Inference for Collider Analysis"
+    event: "ML4JETS 2026, Vienna, Austria"
+    flag: "🇦🇹"
+    indico: "https://indico.global/event/15240/contributions/165242/"
+
+  - date: "Aug 2026"
+    type: "Highlight Plenary Talk"
+    title: "Steering in Theory Space: Representation Engineering of a Lagrangian Transformer"
+    event: "EuCAIFCon 2026, Heidelberg, Germany"
+    flag: "🇩🇪"
+    indico: "https://indico.physi.uni-heidelberg.de/event/1277/contributions/4262/"
+    note: "Selected plenary highlight talk (top 5 of 162)."
+
+  - date: "Aug 2026"
+    type: "Talk + Poster"
+    title: "Steering in Theory Space: Representation Engineering of a Lagrangian Transformer"
+    event: "EuCAIFCon 2026, Heidelberg, Germany"
+    flag: "🇩🇪"
+    indico: "https://indico.physi.uni-heidelberg.de/event/1277/contributions/4240/"
+    note: "Original contributed submission — voted up to the plenary highlight talk above after presenting."
+
+  - date: "Aug 2026"
+    type: "Talk + Poster"
+    title: "Fine-Tunable Region-Conditioned Simulation-Based Inference for Collider Analysis"
+    event: "EuCAIFCon 2026, Heidelberg, Germany"
+    flag: "🇩🇪"
+    indico: "https://indico.physi.uni-heidelberg.de/event/1277/contributions/4167/"
+
+  - date: "Dec 2025"
+    type: "Talk"
+    title: "BART-L: Towards a Foundation Model for Theoretical High-Energy Physics"
+    event: "String Data 2025, London, UK"
+    flag: "🇬🇧"
+    indico: "https://indico.global/event/14913/contributions/139632/"
+
+  - date: "Oct 2025"
+    type: "Invited Talk"
+    title: "BART-L: Towards a Foundation Model for Theoretical High-Energy Physics"
+    event: "DAMTP Data Intensive Science Seminar, University of Cambridge, UK"
+    flag: "🇬🇧"
+    indico: "https://talks.cam.ac.uk/talk/index/238123/"
+
+  - date: "Sep 2025"
+    type: "Invited Workshop (Talk)"
+    title: "AI for Equations"
+    event: "Build Big or Build Smart: Examing Scale and Domain Knowledge in Machine Learning for Fundamental Physics, MIAPbP, Garching, Germany"
+    flag: "🇩🇪"
+    indico: "https://www.munich-iapbp.de/activities/activities-2025/machine-learning/schedule"
+
+  - date: "Jun 2025"
+    type: "Flash Talk + Poster"
+    title: "BART-Lagrangian: When Transformers Write Particle Physics Lagrangians"
+    event: "EuCAIFCon 2025, Sardinia, Italy"
+    flag: "🇮🇹"
+    indico: "https://agenda.infn.it/event/43565/contributions/259961/"
+
+  - date: "Apr 2025"
+    type: "Invited Workshop (Talk/Tutorial)"
+    title: "How to do NLP-like Research in Physics"
+    event: "AI4Physics Learning Workshop, Uppsala University, Sweden"
+    flag: "🇸🇪"
+    indico: "https://www.uu.se/en/department/physics-and-astronomy/research/ai4physics"
+    note: "With E. Camargo-Molina."
+
+  - date: "Oct 2024"
+    type: "Talk"
+    title: "When BART Writes Lagrangians: Towards a HEP-LLM (Large Lagrangian Model)"
+    event: "Partikeldagarna 2024, Uppsala, Sweden"
+    flag: "🇸🇪"
+    indico: "https://indico.uu.se/event/1633/contributions/4136/"
+
+  - date: "Aug 2024"
+    type: "Flash Talk"
+    title: "How to Teach a Transformer to Write Lagrangians"
+    event: "IAIFI PhD Summer School 2024, MIT, USA (Online)"
+    flag: "🇺🇸"
+    indico: "https://iaifi.org/phd-summer-school"
+
+  - date: "Jul 2024"
+    type: "Poster"
+    title: "Transforming Particle Theory: Lagrangian Generation through Transformers"
+    event: "ICHEP 2024, Prague, Czech Republic"
+    flag: "🇨🇿"
+    indico: "https://indico.cern.ch/event/1291157/abstracts/167974/"
+
+  - date: "May 2024"
+    type: "Flash Talk + Poster"
+    title: "BSM Parameter Inference with n1D-CNN and Novel Data Augmentation"
+    event: "EuCAIFCon 2024, Amsterdam, Netherlands"
+    flag: "🇳🇱"
+    indico: "https://indico.nikhef.nl/event/4875/contributions/20413/"
+
+  - date: "May 2024"
+    type: "Poster"
+    title: "Generating Lagrangians for Particle Theories"
+    event: "EuCAIFCon 2024, Amsterdam, Netherlands"
+    flag: "🇳🇱"
+    indico: "https://indico.nikhef.nl/event/4875/contributions/20375/"
+
+  - date: "Jan 2024"
+    type: "Poster"
+    title: "BSM Models and Parameter Inference via an n-Channel 1D-CNN"
+    event: "6th Inter-experiment Machine Learning Workshop, CERN, Switzerland"
+    flag: "🇨🇭"
+    indico: "https://indi.to/Zg9q3"
+
+  - date: "Jun 2023"
+    type: "Poster"
+    title: "The ABC of RPV: Small Couplings at the LHC"
+    event: "Fysikdagarna 2023, Swedish Physical Society, Sweden"
+    flag: "🇸🇪"
+    indico: "https://indico.fysik.su.se/event/7762/contributions/12516/"
+
+  - date: "Mar 2022"
+    type: "Talk"
+    title: "Searches for the S1 Leptoquark"
+    event: "IRN Terascale @ Bonn, Bethe Center for Theoretical Physics (BCTP), Germany"
+    flag: "🇩🇪"
+    indico: "https://indico.in2p3.fr/event/26315/contributions/107552/"
