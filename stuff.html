@@ -43,6 +43,31 @@ title: Stuff
     </dl>
     <p class="fun-fact-outro">{{ p.name_fun_fact_outro }}</p>
   </div>
+  <div class="stuff-item">
+    <div class="stuff-title">Languages I speak-ish</div>
+    <div class="table-wrap">
+      <table class="lang-table">
+        <thead>
+          <tr><th>Language</th><th>Description</th></tr>
+        </thead>
+        <tbody>
+          {% for row in s.languages_fun_fact.rows %}
+          <tr>
+            <td>{% if row.link and row.link != "" %}<a href="{{ row.link }}" target="_blank" rel="noopener">{{ row.language }}</a>{% else %}{{ row.language }}{% endif %}</td>
+            <td>{{ row.description }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% if s.languages_fun_fact.note and s.languages_fun_fact.note != "" %}<p class="stuff-text" style="margin-top:.9rem">{{ s.languages_fun_fact.note }}</p>{% endif %}
+  </div>
   {% endif %}
 </section>
 {% endfor %}
+
+{% if s.repo and s.repo != "" %}
+<section>
+  <p class="role" style="margin:0"><a href="{{ s.repo }}" target="_blank" rel="noopener">Source code for this website ↗</a></p>
+</section>
+{% endif %}

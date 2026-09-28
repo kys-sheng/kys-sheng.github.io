@@ -221,6 +221,19 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
   margin-top:.4rem;
 }
 
+.lang-table{width:100%; border-collapse:collapse; font-size:.92rem; margin-top:.8rem; table-layout:fixed}
+.lang-table th{
+  font-family:"IBM Plex Mono", monospace; font-size:.7rem; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--muted); font-weight:500;
+  text-align:left; padding:0 .8rem .6rem 0; border-bottom:1px solid var(--rule);
+}
+.lang-table td{padding:.6rem .8rem .6rem 0; border-bottom:1px solid var(--rule); vertical-align:top}
+.lang-table tbody tr:last-child td{border-bottom:none}
+.lang-table th:first-child, .lang-table td:first-child{width:9rem; font-weight:600}
+@media (max-width:640px){
+  .lang-table{table-layout:auto; width:max-content; min-width:520px}
+}
+
 /* CV page */
 .cv-entry{margin:0 0 1.8rem}
 .cv-entry .when{

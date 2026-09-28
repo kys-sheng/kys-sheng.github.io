@@ -92,3 +92,13 @@ title: CV
     {% endfor %}
   </div>
 </section>
+
+<section>
+  <h2>Languages</h2>
+  {% for l in cv.languages %}
+  <div class="cv-entry">
+    <div class="what">{{ l.level }}</div>
+    <div class="where">{{ l.list }}</div>
+  </div>
+  {% endfor %}
+</section>
