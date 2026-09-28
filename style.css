@@ -194,6 +194,12 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
 .pub-full:last-child{border-bottom:none}
 .pub-full::before{content:none}
 .pub-popsci{margin-top:.7rem; font-size:.96rem}
+.pub-links{
+  display:flex; flex-wrap:wrap; gap:1.1rem; margin-top:.9rem;
+  font-family:"IBM Plex Mono", monospace; font-size:.82rem;
+}
+.pub-links a{color:var(--link); text-decoration:none; border-bottom:1px solid transparent}
+.pub-links a:hover{border-bottom-color:var(--link)}
 .pub-tags{display:flex; flex-wrap:wrap; gap:.5rem; margin-top:.9rem}
 .pub-tag{
   font-family:"IBM Plex Mono", monospace; font-size:.72rem; color:var(--muted);
@@ -208,7 +214,7 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
 /* Stuff page */
 .stuff-item{padding:1.3rem 0; border-top:1px solid var(--rule)}
 .stuff-item:first-child{border-top:none}
-.stuff-title{font-weight:600; font-size:1.02rem}
+.stuff-title{font-weight:600; font-size:1.05rem; color:var(--accent); margin-bottom:.3rem}
 .stuff-text{margin-top:.4rem}
 .stuff-source{
   color:var(--muted); font-size:.85rem; font-family:"IBM Plex Mono", monospace;

@@ -47,7 +47,7 @@ title: Home
     <ul class="journey-visits">
       {% for v in stop.visits %}
       <li>
-        <div class="journey-place">{{ v.place }}</div>
+        <div class="journey-place">↳ {{ v.place }}</div>
         <div class="journey-role">{{ v.role }}</div>
       </li>
       {% endfor %}
@@ -74,28 +74,6 @@ title: Home
   </div>
   {% endfor %}
   <p style="margin-top:1.2rem"><a href="{{ '/publications.html' | relative_url }}">All publications →</a></p>
-</section>
-
-<section>
-  <h2>Fun fact: my name</h2>
-  <dl class="name-note">
-    {% for row in p.name_fun_fact_block1 %}
-    <div class="name-note-row">
-      <dt>{{ row.label }}</dt>
-      <dd>{{ row.value }}</dd>
-    </div>
-    {% endfor %}
-  </dl>
-  <p class="fun-fact-intro">{{ p.name_fun_fact_intro }}</p>
-  <dl class="name-note">
-    {% for row in p.name_fun_fact_block2 %}
-    <div class="name-note-row">
-      <dt>{{ row.label }}</dt>
-      <dd>{{ row.value }}</dd>
-    </div>
-    {% endfor %}
-  </dl>
-  <p class="fun-fact-outro">{{ p.name_fun_fact_outro }}</p>
 </section>
 
 {% for sec in p.extra_sections %}
