@@ -14,28 +14,28 @@ bio:
   - >
     My background is in physics, but I have grown fond of machine learning and computer science. Most of my current work develops machine learning models for problems in fundamental physics. I value whole new approaches to science : Faster with AI is not enough, it needs to be new and hopefully better! :)
   - >
-    When Im not working, I boulder, dance salsa, play guitar/piano, write poems, drink beer and lepak at mamak stalls and kopitiams, but I guess that's already too much personal information here. Be kind and be curious! :)
+    Be kind and be curious! :)
 
 # "Journey so far" — shown as a timeline under the bio on Home.
 # Add/reorder stops freely; set "current: true" on the one you're at now.
 journey:
-  - place: "Penang 🏝️, Malaysia 🇲🇾"
-    role: "Grew up in this small amazing island — #penangonebetter"
-  - place: "Universiti Malaya, KL/PJ, Malaysia 🇲🇾"
-    role: "BSc in Physics (Theoretical/Computational Material Science)"
-  - place: "Academia Sinica, Taiwan 🇹🇼"
-    role: "Research Internship (Theoretical/Computational Material Science)"
-  - place: "Universität Bonn, Germany 🇩🇪"
-    role: "MSc in Physics (Theoretical High Energy Physics)"
-  - place: "Aveiro University, Portugal 🇵🇹"
-    role: "Research Assistantship (Theoretical High Energy Physics)"
   - place: "Uppsala University, Sweden 🇸🇪"
     role: "PhD Candidate (AI+Theoretical High Energy Physics)"
     current: true
     # a stint that happened *during* this stop, not after it
     visits:
       - place: "University of Cambridge, UK 🇬🇧"
-        role: "Visiting PhD Student"
+        role: "Visiting PhD Student (Oct–Dec 2025, during the Uppsala PhD)"
+  - place: "Aveiro University, Portugal 🇵🇹"
+    role: "Research Assistantship (Theoretical High Energy Physics)"
+  - place: "Universität Bonn, Germany 🇩🇪"
+    role: "MSc in Physics (Theoretical High Energy Physics)"
+  - place: "Academia Sinica, Taiwan 🇹🇼"
+    role: "Research Internship (Theoretical/Computational Material Science)"
+  - place: "Universiti Malaya, KL/PJ, Malaysia 🇲🇾"
+    role: "BSc in Physics (Theoretical/Computational Material Science)"
+  - place: "Penang 🏝️, Malaysia 🇲🇾"
+    role: "Grew up in this small amazing island — #penangonebetter"
 
 # Path to your photo. Drop a real image at assets/profile.jpg and change this.
 photo: "assets/profile_pic2.jpg"

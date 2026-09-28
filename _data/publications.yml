@@ -3,12 +3,14 @@
 # `tags` are shown as small keyword labels under each entry — add/remove freely.
 # `link` is optional — leave it blank (or omit it) for an unpublished/TBA entry
 # and the title just won't be a link until you add one.
+# `repo`, `demo`, `model`, and `dataset` are all optional — omit a line to hide that link.
 
 - title: "TBA"
   authors: "TBA"
   venue: "In preparation"
   link: ""
   tags: ["Machine Learning",  "Symbolic Generation", "Systematic Search", "Foundation Models","BART-L"]
+  demo: "https://huggingface.co/spaces/kys-sheng/TheorySpaceNavigationBARTL"
   popsci: >
     Details to be announced.
 
@@ -17,6 +19,7 @@
   venue: "In preparation"
   link: ""
   tags: ["Machine Learning",  "Inverse Problem", "Foundation Models","RACNN"]
+  demo: "https://huggingface.co/spaces/kys-sheng/racnn_bumphunt_demo"
   popsci: >
     Details to be announced.
 
@@ -25,6 +28,9 @@
   venue: "SciPost Phys. 21, 024 (2026)"
   link: "https://doi.org/10.21468/SciPostPhys.21.1.024"
   tags: ["Machine Learning", "Symbolic Generation", "Foundation Models"]
+  demo: "https://huggingface.co/spaces/JoseEliel/generate-lagrangians"
+  model: "https://huggingface.co/JoseEliel/BART-Lagrangian"
+  dataset: "https://huggingface.co/datasets/JoseEliel/lagrangian_generation"
   popsci: >
     Can AI write the equations that describe universes? Yes — and better than I could as a master's student.
     A Lagrangian is the compact formula that defines a particle physics model, and it works a lot like language: fields are the words, the terms built from them are the sentences, and symmetry is the grammar holding it all together. Change one word and the sentence means something else; change one term and you change everything the model predicts, from how the universe evolved to what we should see in today's experiments. We taught a transformer that grammar — and it writes valid Lagrangians for particle content it has never seen. Main contribution by Me and Eliel!
@@ -59,6 +65,7 @@
   venue: "JHEP 07 (2023) 215"
   link: "https://doi.org/10.1007/JHEP07(2023)215"
   tags: ["Inverse Problem", "Systematic Search", "Supersymmetry"]
+  repo: "https://github.com/kys-sheng/abc-rpv"
   popsci: >
     First work of the ABC of RPV series:  R-parity violating supersymmetry has too many possible signatures to look for in the collider.
     Instead we classify what the theory can produce into a finite number of collider signatures.

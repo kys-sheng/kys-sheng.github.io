@@ -15,6 +15,14 @@ title: Publications
     </div>
     <div class="pub-meta">{{ pub.authors }} — {{ pub.venue }}</div>
     <p class="pub-popsci">{{ pub.popsci }}</p>
+    {% if pub.repo or pub.demo or pub.model or pub.dataset %}
+    <div class="pub-links">
+      {% if pub.repo %}<a href="{{ pub.repo }}" target="_blank" rel="noopener">repo ↗</a>{% endif %}
+      {% if pub.demo %}<a href="{{ pub.demo }}" target="_blank" rel="noopener">demo ↗</a>{% endif %}
+      {% if pub.model %}<a href="{{ pub.model }}" target="_blank" rel="noopener">model ↗</a>{% endif %}
+      {% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank" rel="noopener">dataset ↗</a>{% endif %}
+    </div>
+    {% endif %}
     {% if pub.tags %}
     <div class="pub-tags">
       {% for tag in pub.tags %}

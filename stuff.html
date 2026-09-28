@@ -3,6 +3,7 @@ layout: default
 title: Stuff
 ---
 {% assign s = site.data.stuff %}
+{% assign p = site.data.profile %}
 
 <p class="kicker">The Junk Drawer</p>
 <h1>Stuff</h1>
@@ -14,9 +15,34 @@ title: Stuff
   {% for item in sec.items %}
   <div class="stuff-item">
     {% if item.title and item.title != "" %}<div class="stuff-title">{{ item.title }}</div>{% endif %}
-    <p class="stuff-text">{{ item.text }}</p>
+    {% for para in item.text %}
+    <p class="stuff-text">{{ para }}</p>
+    {% endfor %}
     {% if item.source and item.source != "" %}<div class="stuff-source">— {{ item.source }}</div>{% endif %}
   </div>
   {% endfor %}
+  {% if sec.heading == "Fun facts" %}
+  <div class="stuff-item">
+    <div class="stuff-title">My name</div>
+    <dl class="name-note">
+      {% for row in p.name_fun_fact_block1 %}
+      <div class="name-note-row">
+        <dt>{{ row.label }}</dt>
+        <dd>{{ row.value }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+    <p class="fun-fact-intro">{{ p.name_fun_fact_intro }}</p>
+    <dl class="name-note">
+      {% for row in p.name_fun_fact_block2 %}
+      <div class="name-note-row">
+        <dt>{{ row.label }}</dt>
+        <dd>{{ row.value }}</dd>
+      </div>
+      {% endfor %}
+    </dl>
+    <p class="fun-fact-outro">{{ p.name_fun_fact_outro }}</p>
+  </div>
+  {% endif %}
 </section>
 {% endfor %}

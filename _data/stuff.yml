@@ -1,30 +1,49 @@
 # --- "Stuff" page. A junk drawer for anything that doesn't fit elsewhere.  ---
 # --- Organized into sections — add/remove/rename sections and items freely, ---
-# --- copying the placeholder block in each to add more.                    ---
+# --- copying the placeholder block in each to add more. "text" is a list —  ---
+# --- add one "-" line per paragraph.                                       ---
 
 under_construction: "This page is under construction — a home for everything else."
 
 sections:
+  - heading: "Fun facts"
+    items:
+      - title: "abc-rpv is NP-complete"
+        text:
+          - "In the abc-rpv project, finding the minimal set of signatures that can cover the full set of possibilities is a set cover problem (NP-complete)."
+        source: ""
+      - title: "Breaking the Turing test with a simple prompt"
+        text:
+          - "If you ask an LLM to count how many 1s are in a string of 1s and 0s, without explanation and without writing Python code, the probability of it giving the wrong answer is non-zero. It's an architectural issue, and arguably a way to break the Turing test. :)"
+          - 'Example prompt: "10111010000010101 how many ones are there? Just answer, no explanation, no python code writing."'
+          - "Success rate varies based on model version, forced chain-of-thought options, and random seed/temperature."
+          - "If it fails, add more 1s and 0s into your sequence randomly. :)"
+        source: ""
+
+  - heading: "More about me"
+    items:
+      - title: ""
+        text:
+          - "When Im not working, I boulder, dance salsa, play guitar/piano, write poems, drink beer and lepak at mamak stalls and kopitiams, but I guess that's already too much personal information here. :)"
+        source: ""
+
   - heading: "Interesting papers"
     items:
       - title: "XXX"
-        text: "XXX"
+        text:
+          - "XXX"
         source: ""
 
   - heading: "Interesting quotes"
     items:
       - title: ""
-        text: "XXX"
+        text:
+          - "XXX"
         source: "XXX"
-
-  - heading: "Fun facts"
-    items:
-      - title: "XXX"
-        text: "XXX"
-        source: ""
 
   - heading: "Blurbs"
     items:
       - title: "XXX"
-        text: "XXX"
+        text:
+          - "XXX"
         source: ""
