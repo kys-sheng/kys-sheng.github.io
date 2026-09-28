@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Full CV
+title: CV
 ---
 {% assign p = site.data.profile %}
 {% assign cv = site.data.cv %}
@@ -16,7 +16,7 @@ title: Full CV
   <div class="cv-entry">
     <div class="when">{{ e.period }}</div>
     <div class="what">{{ e.what }}</div>
-    {% if e.where %}<div class="where">{{ e.where }}</div>{% endif %}
+    {% if e.where %}<div class="where">{% if e.link and e.link != "" %}<a href="{{ e.link }}" target="_blank" rel="noopener">{{ e.where }}</a>{% else %}{{ e.where }}{% endif %}</div>{% endif %}
     {% if e.detail %}<p>{{ e.detail }}</p>{% endif %}
     {% if e.grade %}<div class="cv-meta">Grade: {{ e.grade }}</div>{% endif %}
     {% if e.grant %}<div class="cv-meta">Grant: {{ e.grant }}</div>{% endif %}
@@ -31,7 +31,7 @@ title: Full CV
   <div class="cv-entry">
     <div class="when">{{ e.period }}</div>
     <div class="what">{{ e.what }}</div>
-    {% if e.where %}<div class="where">{{ e.where }}</div>{% endif %}
+    {% if e.where %}<div class="where">{% if e.link and e.link != "" %}<a href="{{ e.link }}" target="_blank" rel="noopener">{{ e.where }}</a>{% else %}{{ e.where }}{% endif %}</div>{% endif %}
     {% if e.detail %}<p>{{ e.detail }}</p>{% endif %}
     {% if e.grade %}<div class="cv-meta">Grade: {{ e.grade }}</div>{% endif %}
     {% if e.grant %}<div class="cv-meta">Grant: {{ e.grant }}</div>{% endif %}
@@ -42,14 +42,12 @@ title: Full CV
 
 <section>
   <h2>Publications</h2>
-  {% for pub in site.data.publications %}
-  <div class="pub">
-    <div class="pub-title">
-      {% if pub.link and pub.link != "" %}<a href="{{ pub.link }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
-    </div>
-    <div class="pub-meta">{{ pub.authors }} — {{ pub.venue }}</div>
-  </div>
-  {% endfor %}
+  <p><a href="{{ '/publications.html' | relative_url }}">See the full publications list →</a></p>
+</section>
+
+<section>
+  <h2>Presentations</h2>
+  <p><a href="{{ '/talks.html' | relative_url }}">See the full talks &amp; presentations list →</a></p>
 </section>
 
 <section>
@@ -59,6 +57,18 @@ title: Full CV
     <div class="when">{{ e.period }}</div>
     <div class="what">{{ e.what }}</div>
     {% if e.where %}<div class="where">{{ e.where }}</div>{% endif %}
+    {% if e.detail %}<p>{{ e.detail }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>Other experiences</h2>
+  {% for e in cv.other_experiences %}
+  <div class="cv-entry">
+    <div class="when">{{ e.period }}</div>
+    <div class="what">{{ e.what }}</div>
+    {% if e.where %}<div class="where">{% if e.link and e.link != "" %}<a href="{{ e.link }}" target="_blank" rel="noopener">{{ e.where }}</a>{% else %}{{ e.where }}{% endif %}</div>{% endif %}
     {% if e.detail %}<p>{{ e.detail }}</p>{% endif %}
   </div>
   {% endfor %}

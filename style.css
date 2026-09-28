@@ -257,15 +257,34 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
 .tool-links a:hover{border-bottom-color:var(--link)}
 
 /* talks page */
-.qr-code{
-  width:180px; height:180px; object-fit:contain; border:1px solid var(--rule);
-  border-radius:8px; padding:.8rem; background:var(--bg); display:block; transition:border-color .15s;
+.table-wrap{overflow-x:auto}
+.talks-table{width:100%; border-collapse:collapse; font-size:.88rem; table-layout:fixed}
+.tally-table{width:auto; min-width:16rem; table-layout:auto}
+.tally-table td:last-child{font-family:"IBM Plex Mono", monospace; color:var(--text); text-align:right}
+.talks-table th{
+  font-family:"IBM Plex Mono", monospace; font-size:.7rem; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--muted); font-weight:500;
+  text-align:left; padding:0 .8rem .6rem 0; border-bottom:1px solid var(--rule);
 }
-a:has(.qr-code):hover .qr-code, a:has(.qr-code):focus-visible .qr-code{border-color:var(--accent)}
-.qr-code-placeholder{
-  width:180px; height:180px; display:flex; align-items:center; justify-content:center;
-  border:1px dashed var(--rule); border-radius:8px; color:var(--muted);
-  font-family:"IBM Plex Mono", monospace; font-size:.78rem; text-align:center; padding:1rem;
+.talks-table td{
+  padding:.7rem .8rem .7rem 0; border-bottom:1px solid var(--rule);
+  vertical-align:top; overflow-wrap:break-word;
+}
+.talks-table tbody tr:last-child td{border-bottom:none}
+.talks-date, .talks-type{color:var(--muted); font-size:.85rem}
+.talks-event{color:var(--muted); font-size:.85rem}
+.talks-flag{font-size:1.1rem}
+.talks-table th:nth-child(1), .talks-date{width:11%}
+.talks-table th:nth-child(2), .talks-flag{width:6%}
+.talks-table th:nth-child(3), .talks-type{width:18%}
+.talks-table th:nth-child(4){width:35%}
+.talks-table th:nth-child(5), .talks-event{width:30%}
+.talks-note{
+  color:var(--muted); font-size:.78rem; font-family:"IBM Plex Mono", monospace; margin-top:.25rem;
+}
+@media (max-width:640px){
+  .talks-table{table-layout:auto; width:max-content; min-width:600px}
+  .talks-date, .talks-type{white-space:nowrap}
 }
 
 footer.site-footer{
