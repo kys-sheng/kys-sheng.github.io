@@ -7,12 +7,12 @@ tagline: "PhD Candidate — AI for Fundamental Physics"  # shown on the Home pag
 
 # One or more paragraphs. Add a new "- >" block for each paragraph.
 bio:
-  - > 
-    Hi! Im Yong Sheng (or just Sheng), I like fundamental science, learning through research, building stuff that's hopefully useful, and many more things. Currently trying to stay in academia as long as it will allow me. 
   - >
-    I care about how the world works from a fundamental point of view. I am drawn to underlying structure and principles rather than to any single successful instance or usecase of it. I crave to see mind-blowing discoveries and not just another incremental extension of what we already know. 
+    Hi! I'm Yong Sheng (or just Sheng). I like fundamental science, learning through research, building stuff that's hopefully useful, and many more things. Currently, trying to do research as long as I can.
   - >
-    My background is in physics, but I have grown fond of machine learning and computer science. Most of my current work develops machine learning models for problems in fundamental physics. I value whole new approaches to science : Faster with AI is not enough, it needs to be new and hopefully better! :)
+    I care about how the world works from a fundamental point of view. I am drawn to underlying structure and principles rather than to any single successful instance or use case of it. I crave mind-blowing discoveries and not just another incremental extension of what we already know.
+  - >
+    My background is in physics, but I have grown fond of machine learning and computer science. Most of my current work develops machine learning models/methods for problems in fundamental physics. I value whole new approaches to science. Faster with AI is not enough; it needs to be new and hopefully better!
   - >
     Be kind and be curious! :)
 
@@ -62,23 +62,19 @@ links:
   - label: "Scholar"
     url: "https://scholar.google.com/citations?user=shyOq3QAAAAJ"
 
-# "Fun fact" section, shown at the bottom of Home, as two blocks of rows
-# with a caption line between them, and a cheeky closing line at the end.
-# Add/remove rows freely — order here is the order they're shown in.
+# "My name" fun fact on the Stuff page: one table of rows, followed by an
+# explanation list and a closing line. Add/remove rows freely — order here
+# is the order they're shown in.
 # The Hokkien POJ line is a best-effort reading (郭永盛 -> Koeh Éng-sēng) —
 # Hokkien pronunciation varies a lot by region/family, so please double-check
 # it matches how your own family actually says it before trusting it.
-name_fun_fact_block1:
+name_fun_fact_rows:
   - label: "In Malaysia"
     value: "Koay Yong Sheng"
   - label: "In the West/Academia"
     value: "Yong Sheng Koay"
   - label: "In Mandarin"
     value: "郭永盛"
-name_fun_fact_intro: >
-  Family name first, per Chinese culture — and then a mix of different
-  pronunciations, per Malaysian rojak chaos.
-name_fun_fact_block2:
   - label: "Given name"
     value: "Yong Sheng (永盛)"
   - label: "Family name"
@@ -89,6 +85,9 @@ name_fun_fact_block2:
     value: "Koeh Éng-sēng"
   - label: "Call me"
     value: "Yong Sheng or Sheng (never Yong, please!)"
+name_fun_fact_intro:
+  - "Family name first, per Chinese culture. It's also a mix of different pronunciations, per Malaysian rojak chaos. So, don't ask me how to pronounce my name 'properly', there's either none or too many."
+  - "When written in alphabets, I have a space between my given name, which also differs from other Mandarin-speaking countries (they either merge or have a hyphen). I don't have a middle name!"
 name_fun_fact_outro: >
   Don't ask my Malaysian friends what they call me, they will give you
   anything but the real thing :)

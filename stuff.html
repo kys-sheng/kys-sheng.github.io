@@ -24,37 +24,39 @@ title: Stuff
   {% if sec.heading == "Fun facts" %}
   <div class="stuff-item">
     <div class="stuff-title">My name</div>
-    <dl class="name-note">
-      {% for row in p.name_fun_fact_block1 %}
-      <div class="name-note-row">
-        <dt>{{ row.label }}</dt>
-        <dd>{{ row.value }}</dd>
-      </div>
-      {% endfor %}
-    </dl>
-    <p class="fun-fact-intro">{{ p.name_fun_fact_intro }}</p>
-    <dl class="name-note">
-      {% for row in p.name_fun_fact_block2 %}
-      <div class="name-note-row">
-        <dt>{{ row.label }}</dt>
-        <dd>{{ row.value }}</dd>
-      </div>
-      {% endfor %}
-    </dl>
-    <p class="fun-fact-outro">{{ p.name_fun_fact_outro }}</p>
+    <div class="table-wrap">
+      <table class="lang-table">
+        <thead>
+          <tr><th>Field</th><th>Value</th></tr>
+        </thead>
+        <tbody>
+          {% for row in p.name_fun_fact_rows %}
+          <tr>
+            <td>{{ row.label }}</td>
+            <td>{{ row.value }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% for para in p.name_fun_fact_intro %}
+    <p class="stuff-text" style="margin-top:.9rem">{{ para }}</p>
+    {% endfor %}
+    <p class="stuff-text">{{ p.name_fun_fact_outro }}</p>
   </div>
   <div class="stuff-item">
     <div class="stuff-title">Languages I speak-ish</div>
     <div class="table-wrap">
-      <table class="lang-table">
+      <table class="lang-table lang-table-wide">
         <thead>
-          <tr><th>Language</th><th>Description</th></tr>
+          <tr><th>Language</th><th>Family</th><th>Description</th></tr>
         </thead>
         <tbody>
           {% for row in s.languages_fun_fact.rows %}
           <tr>
-            <td>{% if row.link and row.link != "" %}<a href="{{ row.link }}" target="_blank" rel="noopener">{{ row.language }}</a>{% else %}{{ row.language }}{% endif %}</td>
-            <td>{{ row.description }}</td>
+            <td data-label="Language">{% if row.link and row.link != "" %}<a href="{{ row.link }}" target="_blank" rel="noopener">{{ row.language }}</a>{% else %}{{ row.language }}{% endif %}</td>
+            <td data-label="Family">{{ row.family }}</td>
+            <td data-label="Description">{{ row.description }}</td>
           </tr>
           {% endfor %}
         </tbody>
