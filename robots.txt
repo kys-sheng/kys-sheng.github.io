@@ -10,6 +10,18 @@ Disallow: /
 User-agent: ChatGPT-User
 Disallow: /
 
+User-agent: Claude-User
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
 User-agent: OAI-SearchBot
 Disallow: /
 
