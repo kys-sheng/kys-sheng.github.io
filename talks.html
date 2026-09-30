@@ -20,14 +20,14 @@ title: Presentations
         {% unless talk.type contains "Invited" %}
           {% if talk.type contains "Plenary" %}
           <tr>
-            <td class="talks-date">{{ talk.date }}</td>
+            <td class="talks-date" data-label="Date">{{ talk.date }}</td>
             <td class="talks-flag">{{ talk.flag }}</td>
-            <td class="talks-type">{{ talk.type }}</td>
-            <td>
+            <td class="talks-type" data-label="Type">{{ talk.type }}</td>
+            <td data-label="Talk">
               {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
               {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
             </td>
-            <td class="talks-event">{{ talk.event }}</td>
+            <td class="talks-event" data-label="Event">{{ talk.event }}</td>
           </tr>
           {% endif %}
         {% endunless %}
@@ -48,14 +48,14 @@ title: Presentations
         {% for talk in t.talks %}
         {% if talk.type contains "Invited" %}
         <tr>
-          <td class="talks-date">{{ talk.date }}</td>
+          <td class="talks-date" data-label="Date">{{ talk.date }}</td>
           <td class="talks-flag">{{ talk.flag }}</td>
-          <td class="talks-type">{{ talk.type }}</td>
-          <td>
+          <td class="talks-type" data-label="Type">{{ talk.type }}</td>
+          <td data-label="Talk">
             {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
             {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
           </td>
-          <td class="talks-event">{{ talk.event }}</td>
+          <td class="talks-event" data-label="Event">{{ talk.event }}</td>
         </tr>
         {% endif %}
         {% endfor %}
@@ -77,14 +77,14 @@ title: Presentations
           {% if talk.type contains "Talk" %}
             {% unless talk.type contains "Flash" %}
             <tr>
-              <td class="talks-date">{{ talk.date }}</td>
+              <td class="talks-date" data-label="Date">{{ talk.date }}</td>
               <td class="talks-flag">{{ talk.flag }}</td>
-              <td class="talks-type">{{ talk.type }}</td>
-              <td>
+              <td class="talks-type" data-label="Type">{{ talk.type }}</td>
+              <td data-label="Talk">
                 {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
                 {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
               </td>
-              <td class="talks-event">{{ talk.event }}</td>
+              <td class="talks-event" data-label="Event">{{ talk.event }}</td>
             </tr>
             {% endunless %}
           {% endif %}
@@ -111,14 +111,14 @@ title: Presentations
           {% endif %}
           {% unless is_full_talk %}
           <tr>
-            <td class="talks-date">{{ talk.date }}</td>
+            <td class="talks-date" data-label="Date">{{ talk.date }}</td>
             <td class="talks-flag">{{ talk.flag }}</td>
-            <td class="talks-type">{{ talk.type }}</td>
-            <td>
+            <td class="talks-type" data-label="Type">{{ talk.type }}</td>
+            <td data-label="Talk">
               {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
               {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
             </td>
-            <td class="talks-event">{{ talk.event }}</td>
+            <td class="talks-event" data-label="Event">{{ talk.event }}</td>
           </tr>
           {% endunless %}
         {% endunless %}

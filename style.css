@@ -106,33 +106,6 @@ h1{font-size:2.15rem; font-weight:600; margin:0 0 .35rem; text-wrap:balance; let
 .journey-visits .journey-place{font-weight:500; font-size:.86rem; color:var(--muted)}
 .journey-visits .journey-role{font-size:.78rem}
 
-.name-note{
-  display:grid; grid-template-columns:11rem 1fr; row-gap:.85rem; column-gap:1.4rem;
-  background:var(--surface); border-radius:8px;
-  padding:1.2rem 1.4rem; margin:0; font-size:.92rem;
-}
-.name-note-row{display:contents}
-.name-note dt{
-  font-family:"IBM Plex Mono", monospace; font-size:.72rem; text-transform:uppercase;
-  letter-spacing:.05em; color:var(--muted); padding-top:.15rem;
-}
-.name-note dd{margin:0; color:var(--text)}
-
-.fun-fact-intro{
-  color:var(--muted); font-size:.86rem; font-style:italic;
-  text-align:center; margin:1rem 0; max-width:none;
-}
-.fun-fact-outro{
-  font-style:italic; color:var(--muted); font-size:.92rem;
-  margin:1.1rem 0 0;
-}
-@media (max-width:520px){
-  .name-note{grid-template-columns:1fr; row-gap:.3rem}
-  .name-note-row{display:block; margin-bottom:.7rem}
-  .name-note-row:last-child{margin-bottom:0}
-  .name-note dt{padding-top:0}
-}
-
 .profile-row{display:flex; align-items:center; gap:1.4rem; margin-bottom:1.6rem}
 .avatar-trigger{
   padding:0; border:none; background:none; cursor:pointer;
@@ -230,9 +203,7 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
 .lang-table td{padding:.6rem .8rem .6rem 0; border-bottom:1px solid var(--rule); vertical-align:top}
 .lang-table tbody tr:last-child td{border-bottom:none}
 .lang-table th:first-child, .lang-table td:first-child{width:9rem; font-weight:600}
-@media (max-width:640px){
-  .lang-table{table-layout:auto; width:max-content; min-width:520px}
-}
+.lang-table-wide th:nth-child(2), .lang-table-wide td:nth-child(2){width:8rem}
 
 /* CV page */
 .cv-entry{margin:0 0 1.8rem}
@@ -302,8 +273,22 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
   color:var(--muted); font-size:.78rem; font-family:"IBM Plex Mono", monospace; margin-top:.25rem;
 }
 @media (max-width:640px){
-  .talks-table{table-layout:auto; width:max-content; min-width:600px}
-  .talks-date, .talks-type{white-space:nowrap}
+  .talks-table:not(.tally-table), .lang-table{
+    table-layout:auto; width:100%; min-width:0;
+  }
+  .talks-table:not(.tally-table) thead, .lang-table thead{display:none}
+  .talks-table:not(.tally-table) tbody tr, .lang-table tbody tr{
+    display:block; padding:.9rem 0; border-bottom:1px solid var(--rule);
+  }
+  .talks-table:not(.tally-table) tbody tr:last-child, .lang-table tbody tr:last-child{border-bottom:none}
+  .talks-table:not(.tally-table) td, .lang-table td{
+    display:block; border:none; padding:.15rem 0; width:auto; overflow-wrap:break-word;
+  }
+  .talks-table:not(.tally-table) td[data-label]::before, .lang-table td[data-label]::before{
+    content:attr(data-label); display:block; font-family:"IBM Plex Mono", monospace;
+    font-size:.66rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin-bottom:.15rem;
+  }
+  .talks-flag{font-size:1.3rem}
 }
 
 footer.site-footer{
