@@ -67,8 +67,7 @@
   tags: ["Inverse Problem", "Systematic Search", "Supersymmetry"]
   repo: "https://github.com/kys-sheng/abc-rpv"
   popsci: >
-    First work of the ABC of RPV series:  R-parity violating supersymmetry has too many possible signatures to look for in the collider.
-    Instead we classify what the theory can produce into a finite number of collider signatures.
-    14!~9·10^10 possible hierarchies and corresponding search possibilities reduced to 6 distinct signatures.
-    We showed for LLE case here. I wrote the abc-rpv package to look for the signatures and did part of the collider analysis for the LLE case.
-    Idea and main contribution by Saurabh!
+    First work of the ABC of RPV series: R-parity violating Minimal Supersymmetric Standard Model (RPV-MSSM) has too many possible signatures to look for in the collider.
+    Instead, we classify what the theory can produce into a finite number of collider signatures at the low coupling case: 14!~O(10^10) possible hierarchies and corresponding search possibilities reduced to 17 distinct signatures.
+    We showed for LLE case (6 signatures) in this 1st paper. I wrote the abc-rpv package that corresponds to that framework (a Python library that connects signature, decay chain, coupling types, and LSP cases) and did part of the collider analysis for the LLE case.
+    Main idea and contribution by Saurabh!
