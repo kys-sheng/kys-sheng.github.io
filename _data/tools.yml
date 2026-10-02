@@ -1,4 +1,5 @@
 # --- One entry per tool/demo. website, github, huggingface, model and dataset are optional — omit a line to hide that link. ---
+# --- "links" is an optional list of extra named links (e.g. several demo pages in one repo): {label, url}. ---
 
 - name: "abc-rpv"
   description: >
@@ -40,5 +41,11 @@
     turned into updated node embeddings. The third is a transformer attention
     walkthrough that treats IceCube detector hits as tokens, from input to
     final prediction.
-  website: "https://kys-sheng.github.io/gnn_interactive_viz/"
   github: "https://github.com/kys-sheng/gnn_interactive_viz"
+  links:
+    - label: "GNN visualizer"
+      url: "https://kys-sheng.github.io/gnn_interactive_viz/gnn_interactive_viz_with_explanation.html"
+    - label: "Directed kNN demo"
+      url: "https://kys-sheng.github.io/gnn_interactive_viz/dgnn_editable.html"
+    - label: "Transformer for IceCube"
+      url: "https://kys-sheng.github.io/gnn_interactive_viz/transformer.html"
