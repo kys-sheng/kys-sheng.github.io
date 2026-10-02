@@ -19,6 +19,7 @@ title: Tools
         {% if t.huggingface %}<a href="{{ t.huggingface }}" target="_blank" rel="noopener">huggingface ↗</a>{% endif %}
         {% if t.model %}<a href="{{ t.model }}" target="_blank" rel="noopener">model ↗</a>{% endif %}
         {% if t.dataset %}<a href="{{ t.dataset }}" target="_blank" rel="noopener">dataset ↗</a>{% endif %}
+        {% for link in t.links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endfor %}
       </div>
     </div>
     {% endfor %}
