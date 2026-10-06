@@ -33,7 +33,7 @@
     ensemble posteriors for signal+background versus background-only, and other evaluation metrics calculated in real time.
   huggingface: "https://huggingface.co/spaces/kys-sheng/racnn_bumphunt_demo"
 
-- name: "GNN Interactive Viz"
+- name: "Interactive Visualization for GNN & Transformers"
   description: >
     Three browser-based teaching demos, LLM-coded from my own designs. Two walk
     through GNNs — a fully-explained step-by-step visualizer, and a lighter,
