@@ -49,3 +49,15 @@
       url: "https://kys-sheng.github.io/gnn_interactive_viz/dgnn_editable.html"
     - label: "Transformer for IceCube"
       url: "https://kys-sheng.github.io/gnn_interactive_viz/transformer.html"
+
+- name: "Monte Carlo Tree Search for Hex"
+  description: >
+    A Hex game engine built around the Monte Carlo Tree Search algorithm — not
+    a physics project, just something I built for fun during my MSc. It
+    predates my GitHub use, so there's no repo to link here unfortunately.
+    Code exists somewhere on the hard disk of my now-dead old laptop. RIP.
+  links:
+    - label: "Monte Carlo Tree Search"
+      url: "https://en.wikipedia.org/wiki/Monte_Carlo_tree_search"
+    - label: "Hex (board game)"
+      url: "https://en.wikipedia.org/wiki/Hex_(board_game)"

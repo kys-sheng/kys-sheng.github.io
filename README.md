@@ -7,6 +7,7 @@ All page content lives in `_data/*.yml` — edit those files, not the `.html` on
 | File | Controls |
 |---|---|
 | `_data/profile.yml` | Name, Mandarin name, bio, photo, office/contact info, link row (email/arXiv/InspireHEP/GitHub/Scholar) |
+| `_data/research.yml` | Research page (interests, directions, selection criteria) |
 | `_data/publications.yml` | Publications page + "Recent publications" on Home |
 | `_data/cv.yml` | CV page (education, positions, teaching, other experiences, awards, skills) — also points to your CV PDF |
 | `_data/tools.yml` | Tools page (each entry: name, description, website/GitHub/HuggingFace links) |
