@@ -1,0 +1,14 @@
+---
+layout: default
+title: Research
+---
+{% assign r = site.data.research %}
+
+<p class="kicker">Interests &amp; Direction</p>
+<h1>Research</h1>
+<p class="role">{{ r.intro }}</p>
+
+{% for para in r.body %}
+<p>{{ para }}</p>
+{% endfor %}
+<p>Publication list: <a href="{{ '/publications.html' | relative_url }}">kys-sheng.github.io/publications.html</a></p>
