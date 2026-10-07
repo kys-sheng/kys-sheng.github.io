@@ -1,14 +1,47 @@
 # --- Research page. "body" is the whole page's content as a list of        ---
-# --- paragraphs — add a new "-" line per paragraph. Inline HTML (<strong>,  ---
-# --- <a>) is allowed, same as elsewhere on the site.                        ---
+# --- blocks — add a new "-" line per block. Each block is raw HTML (full    ---
+# --- control over <p>/<ul>/<strong>/<a> etc.), same as elsewhere on the     ---
+# --- site.                                                                  ---
 
 intro: "Details on what I care about and where I want to take it."
 
 body:
-  - "My research journey is built on wanting a bird's-eye view across fundamental science, with pockets of depth (and hopefully lasting contributions) wherever I happen to dig in along the way. I'm quite sure my research interests will keep changing over time, while this approach remains."
-  - "What draws me in is usually the structures and patterns of a field itself, and anything aimed at genuinely new physics, rather than just applying known physics to produce new successful instances of it (i.e. new things with old physics). That's why I have a strong interest in building new methods, or using existing ones in unique ways, such that they open up new ways of approaching existing problems. Hence why I'm currently super into machine learning. These models and methods need to be easily accessible by researchers and/or transferable to different domains, so that we can impact beyond our own research. Closed models or bad UI usually lead us nowhere as a community."
-  - '<strong>Current main research focus:</strong><br>ML for math &amp; theoretical physics, representation engineering, interpretability, Platonic/Aristotelian Representation Hypothesis.<br>(See <a href="https://doi.org/10.21468/SciPostPhys.21.1.024" target="_blank" rel="noopener">BART-L project</a>, <a href="https://huggingface.co/spaces/kys-sheng/TheorySpaceNavigationBARTL" target="_blank" rel="noopener">Steering project</a>.)'
-  - '<strong>Other research interests with experience:</strong><br>amortization, SBI, foundation models, BSM-dictionary (a continuation of abc-rpv).<br>(See <a href="https://huggingface.co/spaces/kys-sheng/racnn_bumphunt_demo" target="_blank" rel="noopener">RACNN Project</a>, <a href="https://doi.org/10.1007/JHEP07(2023)215" target="_blank" rel="noopener">abc-rpv framework</a>.)'
-  - "<strong>Other research interests with little or no experience:</strong><br>graph theory (hypergraphs), string theory (the string landscape), statistical physics for ML, neural network field theory, active inference, emergence, early universe cosmology, astroparticle physics, semiotics (the study of symbols and signs), and more."
-  - "I think of myself as a physicist first, not as a 'particle physicist', a 'collider physicist', a 'condensed matter physicist', a 'BSM guy', a 'SUSY guy', a 'theorist', a 'pheno guy', or any other label. Having experience in one area doesn't mean it's the only thing I can do, or the only thing I want to do. While I'm grateful for what I get to learn from each project I've done, I don't want to be constrained by what I've already worked on. As with most research journeys, projects are sometimes chosen by circumstance rather than choice."
-  - "As such, ask me what I'm really into at any given point, rather than assuming my interest based on what I've done. Currently, my publications mainly show my experience; hopefully, over time, they'll show my interests too."
+  - "<p>My research journey is built on wanting a bird's-eye view across fundamental science, with pockets of depth (and hopefully lasting contributions) wherever I happen to dig in along the way. I'm quite sure my research interests will keep changing over time, while this approach remains.</p>"
+  - "<p>What draws me in is usually the structures and patterns of a field itself, and anything aimed at genuinely new physics, rather than just applying known physics to produce new successful instances of it (i.e. new things with old physics). That's why I have a strong interest in building new methods, or using existing ones in unique ways, such that they open up new ways of approaching existing problems. Hence why I'm currently super into machine learning. These models and methods need to be easily accessible by researchers and/or transferable to different domains, so that we can impact beyond our own research. Closed models or bad UI usually lead us nowhere as a community.</p>"
+  - >
+    <p><strong>Main Research Idea:</strong></p>
+    <ul class="research-list">
+      <li>Physics for ML for Physics</li>
+      <li>Doing Pheno without Doing Pheno</li>
+    </ul>
+  - >
+    <p><strong>Current main research focus:</strong></p>
+    <ul class="research-list">
+      <li>ML for math &amp; theoretical physics</li>
+      <li>representation engineering, Platonic/Aristotelian Representation Hypothesis</li>
+      <li>interpretability</li>
+    </ul>
+    <p>(See <a href="https://doi.org/10.21468/SciPostPhys.21.1.024" target="_blank" rel="noopener">BART-L project</a>, <a href="https://huggingface.co/spaces/kys-sheng/TheorySpaceNavigationBARTL" target="_blank" rel="noopener">Steering project</a>.)</p>
+  - >
+    <p><strong>Other research interests with experience:</strong></p>
+    <ul class="research-list">
+      <li>amortization with neural surrogates &amp; SBI</li>
+      <li>foundation models</li>
+      <li>BSM-dictionary (a continuation of abc-rpv)</li>
+    </ul>
+    <p>(See <a href="https://huggingface.co/spaces/kys-sheng/racnn_bumphunt_demo" target="_blank" rel="noopener">RACNN Project</a>, <a href="https://doi.org/10.1007/JHEP07(2023)215" target="_blank" rel="noopener">abc-rpv framework</a>.)</p>
+  - >
+    <p><strong>Other research interests with little or no experience:</strong></p>
+    <ul class="research-list">
+      <li>graph theory (hypergraphs)</li>
+      <li>statistical physics for ML (treating networks as lattice systems)</li>
+      <li>string theory (the string landscape)</li>
+      <li>neural network field theory</li>
+      <li>active inference</li>
+      <li>emergence</li>
+      <li>early universe cosmology, astroparticle physics</li>
+      <li>semiotics (the study of symbols and signs)</li>
+      <li>and more</li>
+    </ul>
+  - "<p>I think of myself as a physicist first, not as a 'particle physicist', a 'collider physicist', a 'condensed matter physicist', a 'BSM guy', a 'SUSY guy', a 'theorist', a 'pheno guy', or any other label. Having experience in one area doesn't mean it's the only thing I can do, or the only thing I want to do. While I'm grateful for what I get to learn from each project I've done, I don't want to be constrained by what I've already worked on. As with most research journeys, projects are sometimes chosen by circumstance rather than choice.</p>"
+  - "<p>As such, ask me what I'm really into at any given point, rather than assuming my interest based on what I've done. Currently, my publications mainly show my experience; hopefully, over time, they'll show my interests too.</p>"
