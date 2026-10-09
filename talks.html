@@ -26,6 +26,7 @@ title: Presentations
             <td data-label="Talk">
               {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
               {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
+              {% if talk.video %}<div class="talks-note"><a href="{{ talk.video }}" target="_blank" rel="noopener">Watch recording ↗</a></div>{% endif %}
             </td>
             <td class="talks-event" data-label="Event">{{ talk.event }}</td>
           </tr>
@@ -54,6 +55,7 @@ title: Presentations
           <td data-label="Talk">
             {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
             {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
+            {% if talk.video %}<div class="talks-note"><a href="{{ talk.video }}" target="_blank" rel="noopener">Watch recording ↗</a></div>{% endif %}
           </td>
           <td class="talks-event" data-label="Event">{{ talk.event }}</td>
         </tr>
@@ -83,6 +85,7 @@ title: Presentations
               <td data-label="Talk">
                 {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
                 {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
+                {% if talk.video %}<div class="talks-note"><a href="{{ talk.video }}" target="_blank" rel="noopener">Watch recording ↗</a></div>{% endif %}
               </td>
               <td class="talks-event" data-label="Event">{{ talk.event }}</td>
             </tr>
@@ -117,6 +120,7 @@ title: Presentations
             <td data-label="Talk">
               {% if talk.indico and talk.indico != "" %}<a href="{{ talk.indico }}" target="_blank" rel="noopener">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}
               {% if talk.note %}<div class="talks-note">{{ talk.note }}</div>{% endif %}
+              {% if talk.video %}<div class="talks-note"><a href="{{ talk.video }}" target="_blank" rel="noopener">Watch recording ↗</a></div>{% endif %}
             </td>
             <td class="talks-event" data-label="Event">{{ talk.event }}</td>
           </tr>

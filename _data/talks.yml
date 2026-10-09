@@ -1,5 +1,6 @@
 # --- Talks page. One entry per talk/poster, newest first. Copy a block   ---
-# --- below and edit it to add one. "note" and "slides" are optional.      ---
+# --- below and edit it to add one. "note", "slides", and "video" are      ---
+# --- optional.                                                            ---
 # --- "type" is used both for display and for the tally at the bottom of  ---
 # --- the page (it looks for the words Poster/Plenary/Invited/Flash/      ---
 # --- Workshop/Talk inside it), so keep using those words when you add    ---
@@ -32,6 +33,7 @@ talks:
     flag: "🇩🇪"
     indico: "https://indico.physi.uni-heidelberg.de/event/1277/contributions/4262/"
     note: "Selected plenary highlight talk (top 5 of 162)."
+    video: "https://www.youtube.com/live/hf0FknJq4-k?si=Zi0a3QIGZWlQCYk1&t=4066"
 
   - date: "Aug 2026"
     type: "Talk + Poster"
