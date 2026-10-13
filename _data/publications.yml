@@ -4,13 +4,23 @@
 # `link` is optional — leave it blank (or omit it) for an unpublished/TBA entry
 # and the title just won't be a link until you add one.
 # `repo`, `demo`, `model`, and `dataset` are all optional — omit a line to hide that link.
+# `talks` is an optional list of {label, url} pairs linking to talks about the paper.
+# `arxiv` is the arXiv identifier (e.g. "2501.09729") — optional, shown next to the venue.
+# `abstract` is the paper's abstract, shown in a collapsed "Abstract" toggle — optional.
 
 - title: "TBA"
   authors: "TBA"
   venue: "In preparation"
   link: ""
-  tags: ["Machine Learning",  "Symbolic Generation", "Systematic Search", "Foundation Models","BART-L"]
+  tags: ["Machine Learning",  "Symbolic Generation", "Systematic Search", "Foundation Models","BART-L", "Representation Engineering", "Interpretability"]
   demo: "https://huggingface.co/spaces/kys-sheng/TheorySpaceNavigationBARTL"
+  talks:
+    - label: "talk (ML4JETS 2026)"
+      url: "https://indico.global/event/15240/contributions/165352/"
+    - label: "talk (EuCAIFCon 2026)"
+      url: "https://indico.physi.uni-heidelberg.de/event/1277/contributions/4262/"
+    - label: "recording (EuCAIFCon 2026)"
+      url: "https://www.youtube.com/live/hf0FknJq4-k?si=Zi0a3QIGZWlQCYk1&t=4066"
   popsci: >
     Details to be announced.
 
@@ -18,8 +28,11 @@
   authors: "TBA"
   venue: "In preparation"
   link: ""
-  tags: ["Machine Learning",  "Inverse Problem", "Foundation Models","RACNN"]
+  tags: ["Machine Learning",  "Inverse Problem", "Foundation Models","RACNN", "Simulation-Based Inference", "Transfer Learning"]
   demo: "https://huggingface.co/spaces/kys-sheng/racnn_bumphunt_demo"
+  talks:
+    - label: "talk (ML4JETS 2026)"
+      url: "https://indico.global/event/15240/contributions/165242/"
   popsci: >
     Details to be announced.
 
@@ -27,10 +40,16 @@
   authors: "<strong>Y. S. Koay</strong>, R. Enberg, S. Moretti, J. E. Camargo-Molina"
   venue: "SciPost Phys. 21, 024 (2026)"
   link: "https://doi.org/10.21468/SciPostPhys.21.1.024"
+  arxiv: "2501.09729"
   tags: ["Machine Learning", "Symbolic Generation", "Foundation Models"]
   demo: "https://huggingface.co/spaces/JoseEliel/generate-lagrangians"
   model: "https://huggingface.co/JoseEliel/BART-Lagrangian"
   dataset: "https://huggingface.co/datasets/JoseEliel/lagrangian_generation"
+  talks:
+    - label: "talk (MIAPbP: Foundation Model Discussion)"
+      url: "https://indico.ph.tum.de/event/7932/contributions/10875/attachments/6985/9701/Koay_Slides.pdf"
+  abstract: >
+    In physics, Lagrangians provide a systematic way to describe laws governing physical systems. In the context of particle physics, they encode the interactions and behavior of the fundamental building blocks of our universe. By treating Lagrangians as complex, rule-based constructs similar to linguistic expressions, we trained a transformer model, proven to be effective in natural language tasks, to predict the Lagrangian corresponding to a given list of particles. We report on the transformer's performance in constructing Lagrangians respecting the Standard Model SU(3)×SU(2)×U(1) gauge symmetries. The resulting model is shown to achieve high accuracies (over 90%) with Lagrangians up to six matter fields, with the capacity to generalize beyond the training distribution, albeit within architectural constraints. We show through an analysis of input embeddings that the model has internalized concepts such as group representations and conjugation operations as it learned to generate Lagrangians. We make the model and training datasets available to the community. An interactive demonstration can be found at: https://huggingface.co/spaces/JoseEliel/generate-lagrangians.
   popsci: >
     Can AI write the equations that describe universes? Yes — and better than I could as a master's student.
     A Lagrangian is the compact formula that defines a particle physics model, and it works a lot like language: fields are the words, the terms built from them are the sentences, and symmetry is the grammar holding it all together. Change one word and the sentence means something else; change one term and you change everything the model predicts, from how the universe evolved to what we should see in today's experiments. We taught a transformer that grammar — and it writes valid Lagrangians for particle content it has never seen. Main contribution by Me and Eliel!
@@ -39,7 +58,10 @@
   authors: "M. F. Costa, <strong>Y. S. Koay</strong>, S. Moretti"
   venue: "arXiv:2608.03975 [hep-ph], 2026"
   link: "https://arxiv.org/abs/2608.03975"
+  arxiv: "2608.03975"
   tags: ["Machine Learning", "Inverse Problem", "Dark Matter"]
+  abstract: >
+    We assess the scope of a Convolutional Neural Network (CNN) in characterizing potential signals of two-component Dark Matter (DM) arising at the Large Hadron Collider (LHC) from mono-jet and mono-Z probes. We show that such a CNN has the ability of not only inferring the presence of two DM particles but also of extracting their mass and spin, the latter being either 0 or 1/2, following detector level analysis. However, such result represents a conceptual proof-of-concept, as we have not entertained a signal-to-background analysis.
   popsci: >
     Tried to use Convolutional Neural Networks to see whether we can detect dark matter and infer its properties if one or more species are present at colliders.
     Main contribution by Max!
@@ -48,7 +70,10 @@
   authors: "H. K. Dreiner, <strong>Y. S. Koay</strong>, T. Potter, M. Schürmann, R. Sengupta, A. Shah, N. Strobbe"
   venue: "arXiv:2608.21033 [hep-ph], 2026"
   link: "https://arxiv.org/abs/2608.21033"
+  arxiv: "2608.21033"
   tags: ["Inverse Problem", "Systematic Search", "Supersymmetry"]
+  abstract: >
+    We consider the R-parity violating Minimal Supersymmetric Standard Model (RPV-MSSM) with its wide range of signatures as a test model for the coverage of beyond the Standard Model searches at the LHC. Here we present a systematic study of the phenomenological and experimental status of specifically the R-parity violating LQD operators, as the third study in the ABC of RPV series, following our previous analyses of the LLE and UDD operators. We classify the distinct collider signatures for all possible LSPs and for eight representative LQD couplings, considering both direct LSP production and production through gauge cascades. Assuming one non-zero LQD coupling at a time, we assess the current LHC coverage using ATLAS and CMS searches implemented in CheckMATE 2, and identify recent searches relevant for future recasting. We find substantial sensitivity to the colored sector, while gaps remain for wino- and higgsino-like LSPs for couplings involving tau leptons, when the LSP is the only sparticle within the LHC kinematic limit. Slepton LSPs remain unconstrained in their direct production at the LHC, although some sensitivity is found for slepton NLSPs with a bino-like LSP. These results highlight gaps in the CheckMATE 2 search database, as well as the need for targeted LHC searches for specific LQD signatures.
   popsci: >
     Final work of the ABC of RPV series, this time for the LQD couplings. Main contribution by Rhitaja, Apoorva and Martin!
 
@@ -56,7 +81,10 @@
   authors: "H. K. Dreiner, M. Hank, <strong>Y. S. Koay</strong>, M. Schürmann, R. Sengupta, A. Shah, N. Strobbe, E. Thomson"
   venue: "JHEP 06 (2025) 258"
   link: "https://doi.org/10.1007/JHEP06(2025)258"
+  arxiv: "2503.03830"
   tags: ["Inverse Problem", "Systematic Search", "Supersymmetry"]
+  abstract: >
+    We perform a detailed study of the current phenomenological status of baryon number violating operators within the framework of the R-parity violating Minimal Supersymmetric Standard Model (RPV-MSSM). This study aims to identify any gaps in the experimental coverage of the RPV landscape. We identify the unique final states for all possible LSPs decaying via four different benchmark UDD operators. Both the direct production of the LSP and its production via gauge-cascades are considered. For each LSP, we assume that only one UDD coupling is non-zero at a time and confront the signals with existing ATLAS and CMS searches implemented in the recasting framework CheckMATE 2. We find that the UDD colored LSP sector is well covered with the mass bounds on the gluino LSP being the strongest, and with possible improvements for some of the right-handed squark LSPs. We also point out that there is limited coverage for electroweakino and slepton LSPs with UDD decays. This limitation may be due to the lack of targeted experimental searches for these specific final states or the appropriate recasting of existing searches.
   popsci: >
     2nd work in the ABC of RPV series, this time for the UDD couplings. Main contribution by Rhitaja, Apoorva and Martin!
 
@@ -64,8 +92,11 @@
   authors: "H. K. Dreiner, <strong>Y. S. Koay</strong>, D. Köhler, V. M. Lozano, J. Montejo Berlingen, S. Nangia, N. Strobbe"
   venue: "JHEP 07 (2023) 215"
   link: "https://doi.org/10.1007/JHEP07(2023)215"
+  arxiv: "2306.07317"
   tags: ["Inverse Problem", "Systematic Search", "Supersymmetry"]
   repo: "https://github.com/kys-sheng/abc-rpv"
+  abstract: >
+    We perform a classification of all potential supersymmetric R-parity violating signatures at the LHC to address the question: are existing bounds on supersymmetric models robust, or are there still signatures not covered by existing searches, allowing LHC-scale supersymmetry to be hiding? We analyze all possible scenarios with one dominant RPV trilinear coupling at a time, allowing for arbitrary LSPs and mass spectra. We consider direct production of the LSP, as well as production via gauge-cascades, and find 6 different experimental signatures for the LLE-case, 6 for the LQD-case, and 5 for the UDD-case; together these provide complete coverage of the RPV-MSSM landscape. This set of signatures is confronted with the existing searches by ATLAS and CMS. We find all signatures have been covered at the LHC, although not at the sensitivity level needed to probe the direct production of all LSP types. For the case of a dominant LLE-operator, we use CheckMATE to quantify the current lower bounds on the supersymmetric masses and find the limits to be comparable to or better than the R-parity conserving case. Our treatment can be easily extended to scenarios with more than one non-zero RPV coupling.
   popsci: >
     First work of the ABC of RPV series: R-parity violating Minimal Supersymmetric Standard Model (RPV-MSSM) has too many possible signatures to look for in the collider.
     Instead, we classify what the theory can produce into a finite number of collider signatures at the low coupling case: 14!~O(10^10) possible hierarchies and corresponding search possibilities reduced to 17 distinct signatures.
