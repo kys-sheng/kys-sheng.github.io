@@ -169,7 +169,28 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
 .pub-full{padding-bottom:.4rem; padding-left:0; border-bottom:1px solid var(--rule); margin-bottom:1.8rem}
 .pub-full:last-child{border-bottom:none}
 .pub-full::before{content:none}
-.pub-popsci{margin-top:.7rem; font-size:.96rem}
+.pub-popsci{margin-top:.9rem; font-size:.96rem}
+.pub-collapse{margin-top:.9rem; font-size:.9rem; position:relative}
+.pub-clamp-check{position:absolute; opacity:0; pointer-events:none}
+.pub-clamp{position:relative; max-height:4.6em; overflow:hidden; transition:max-height .25s ease}
+.pub-clamp::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:1.6em;
+  background:linear-gradient(to bottom, transparent, var(--bg)); pointer-events:none;
+}
+.pub-clamp-toggle{
+  display:block; margin-top:.4rem; cursor:pointer;
+  color:var(--link); font-family:"IBM Plex Mono", monospace; font-size:.82rem;
+}
+.pub-clamp-toggle:hover{text-decoration:underline}
+.pub-clamp-toggle .show-less{display:none}
+.pub-clamp-check:checked ~ .pub-clamp{max-height:60rem}
+.pub-clamp-check:checked ~ .pub-clamp::after{content:none}
+.pub-clamp-check:checked ~ .pub-clamp-toggle .show-more{display:none}
+.pub-clamp-check:checked ~ .pub-clamp-toggle .show-less{display:inline}
+.pub-abstract{margin-top:.6rem; font-size:.9rem}
+.pub-abstract summary{cursor:pointer; color:var(--muted); font-family:"IBM Plex Mono", monospace; font-size:.82rem}
+.pub-abstract summary:hover{color:var(--accent)}
+.pub-abstract p{margin:.6rem 0 0}
 .pub-links{
   display:flex; flex-wrap:wrap; gap:1.1rem; margin-top:.9rem;
   font-family:"IBM Plex Mono", monospace; font-size:.82rem;

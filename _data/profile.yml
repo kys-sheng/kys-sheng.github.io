@@ -61,6 +61,8 @@ links:
     url: "https://huggingface.co/kys-sheng"
   - label: "Scholar"
     url: "https://scholar.google.com/citations?user=shyOq3QAAAAJ"
+  - label: "CV"
+    url: "assets/cv.pdf"
 
 # "My name" fun fact on the Stuff page: one table of rows, followed by an
 # explanation list and a closing line. Add/remove rows freely — order here

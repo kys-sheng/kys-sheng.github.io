@@ -6,42 +6,45 @@
 intro: "Details on what I care about and where I want to take it."
 
 body:
-  - "<p>My research journey is built on wanting a bird's-eye view across fundamental science, with pockets of depth (and hopefully lasting contributions) wherever I happen to dig in along the way. I'm quite sure my research interests will keep changing over time, while this approach remains.</p>"
-  - "<p>What draws me in is usually the structures and patterns of a field itself, and anything aimed at genuinely new physics, rather than just applying known physics to produce new successful instances of it (i.e. new things with old physics). That's why I have a strong interest in building new methods, or using existing ones in unique ways, such that they open up new ways of approaching existing problems. Hence why I'm currently super into machine learning. These models and methods need to be easily accessible by researchers and/or transferable to different domains, so that we can impact beyond our own research. Closed models or bad UI usually lead us nowhere as a community.</p>"
+  - "<p>My research journey is built on wanting a bird's-eye view across fundamental science, with pockets of depth in understanding and hopefully lasting contributions. As my research interests change over time, the longing for this bird's-eye view remains.</p>"
   - >
-    <p><strong>Main Research Idea:</strong></p>
+    <p>Projects that draw me in are usually:</p>
     <ul class="research-list">
-      <li>Physics for ML for Physics</li>
-      <li>Doing Pheno without Doing Pheno</li>
+      <li>the structures and patterns of the problems we are focused on, and finding another way around them</li>
+      <li>anything aimed at genuinely new physics (rather than new things with old physics)</li>
+      <li>building new methods that are also useful for others (open, transferable)</li>
+      <li>using existing methods in a unique way such that we can do science differently (hence why I'm super into machine learning)</li>
     </ul>
   - >
     <p><strong>Current main research focus:</strong></p>
     <ul class="research-list">
-      <li>ML for math &amp; theoretical physics</li>
-      <li>representation engineering, Platonic/Aristotelian Representation Hypothesis</li>
-      <li>interpretability</li>
+      <li>ML for math &amp; theoretical physics (see <a href="https://doi.org/10.21468/SciPostPhys.21.1.024" target="_blank" rel="noopener">BART-L project</a>, <a href="https://huggingface.co/spaces/kys-sheng/TheorySpaceNavigationBARTL" target="_blank" rel="noopener">Steering project</a>)
+        <ul class="research-list">
+          <li>representation engineering, Platonic/Aristotelian Representation Hypothesis</li>
+          <li>interpretability and explainability</li>
+          <li>symbolic expressions as natural language of science</li>
+        </ul>
+      </li>
+      <li>Methods for physics research (that live longer than most scientist's career in academia)
+        <ul class="research-list">
+          <li>amortization with neural surrogates &amp; SBI (see <a href="https://huggingface.co/spaces/kys-sheng/racnn_bumphunt_demo" target="_blank" rel="noopener">RACNN Project</a>)</li>
+          <li>foundation models (see <a href="https://huggingface.co/spaces/kys-sheng/racnn_bumphunt_demo" target="_blank" rel="noopener">RACNN Project</a>, <a href="https://doi.org/10.21468/SciPostPhys.21.1.024" target="_blank" rel="noopener">BART-L project</a>)</li>
+          <li>BSM-dictionary, a continuation of abc-rpv (see <a href="https://doi.org/10.1007/JHEP07(2023)215" target="_blank" rel="noopener">abc-rpv framework</a>)</li>
+        </ul>
+      </li>
     </ul>
-    <p>(See <a href="https://doi.org/10.21468/SciPostPhys.21.1.024" target="_blank" rel="noopener">BART-L project</a>, <a href="https://huggingface.co/spaces/kys-sheng/TheorySpaceNavigationBARTL" target="_blank" rel="noopener">Steering project</a>.)</p>
   - >
-    <p><strong>Other research interests with experience:</strong></p>
-    <ul class="research-list">
-      <li>amortization with neural surrogates &amp; SBI</li>
-      <li>foundation models</li>
-      <li>BSM-dictionary (a continuation of abc-rpv)</li>
-    </ul>
-    <p>(See <a href="https://huggingface.co/spaces/kys-sheng/racnn_bumphunt_demo" target="_blank" rel="noopener">RACNN Project</a>, <a href="https://doi.org/10.1007/JHEP07(2023)215" target="_blank" rel="noopener">abc-rpv framework</a>.)</p>
-  - >
-    <p><strong>Other research interests with little or no experience:</strong></p>
+    <p><strong>Other research interests that I'm learning/hope to learn at some point:</strong></p>
     <ul class="research-list">
       <li>graph theory (hypergraphs)</li>
       <li>statistical physics for ML (treating networks as lattice systems)</li>
       <li>string theory (the string landscape)</li>
       <li>neural network field theory</li>
-      <li>active inference</li>
+      <li>active inference, reservoir computing</li>
       <li>emergence</li>
-      <li>early universe cosmology, astroparticle physics</li>
+      <li>early universe cosmology, astroparticle physics, astrophysics</li>
       <li>semiotics (the study of symbols and signs)</li>
       <li>and more</li>
     </ul>
-  - "<p>I think of myself as a physicist first, not as a 'particle physicist', a 'collider physicist', a 'condensed matter physicist', a 'BSM guy', a 'SUSY guy', a 'theorist', a 'pheno guy', or any other label. Having experience in one area doesn't mean it's the only thing I can do, or the only thing I want to do. While I'm grateful for what I get to learn from each project I've done, I don't want to be constrained by what I've already worked on. As with most research journeys, projects are sometimes chosen by circumstance rather than choice.</p>"
-  - "<p>As such, ask me what I'm really into at any given point, rather than assuming my interest based on what I've done. Currently, my publications mainly show my experience; hopefully, over time, they'll show my interests too.</p>"
+  - "<p>I see myself as a scientist first, with the skills of a trained physicist. I don't like labels such as 'particle physicist', 'collider physicist', 'condensed matter physicist', 'BSM guy', 'SUSY guy', 'theorist', 'pheno guy', or any other label. If I use them, it's for convenience, not by choice. Having experience in one area doesn't mean it's the only thing I can do, or the only thing I want to do. While I'm grateful for what I get to learn from each project I've done, I don't want to be constrained by what I've already worked on. As with most research journeys, projects are sometimes chosen by circumstance rather than choice.</p>"
+  - "<p>As such, ask me what I'm really into at any given point, rather than assuming my interest based on what I've done. Currently, my publications mainly show my experience; hopefully, over time, they'll show mainly my interests.</p>"

@@ -13,14 +13,35 @@ title: Publications
     <div class="pub-title">
       {% if pub.link and pub.link != "" %}<a href="{{ pub.link }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
     </div>
-    <div class="pub-meta">{{ pub.authors }} — {{ pub.venue }}</div>
-    <p class="pub-popsci">{{ pub.popsci }}</p>
-    {% if pub.repo or pub.demo or pub.model or pub.dataset %}
+    <div class="pub-meta">{{ pub.authors }} — {{ pub.venue }}{% if pub.arxiv %} · <a href="https://arxiv.org/abs/{{ pub.arxiv }}" target="_blank" rel="noopener">arXiv:{{ pub.arxiv }}</a>{% endif %}</div>
+    {% if pub.link or pub.repo or pub.demo or pub.model or pub.dataset or pub.talks %}
     <div class="pub-links">
+      {% if pub.link and pub.link != "" %}<a href="{{ pub.link }}" target="_blank" rel="noopener">paper ↗</a>{% endif %}
       {% if pub.repo %}<a href="{{ pub.repo }}" target="_blank" rel="noopener">repo ↗</a>{% endif %}
       {% if pub.demo %}<a href="{{ pub.demo }}" target="_blank" rel="noopener">demo ↗</a>{% endif %}
       {% if pub.model %}<a href="{{ pub.model }}" target="_blank" rel="noopener">model ↗</a>{% endif %}
       {% if pub.dataset %}<a href="{{ pub.dataset }}" target="_blank" rel="noopener">dataset ↗</a>{% endif %}
+      {% for talk in pub.talks %}<a href="{{ talk.url }}" target="_blank" rel="noopener">{{ talk.label }} ↗</a>{% endfor %}
+    </div>
+    {% endif %}
+    {% if pub.abstract %}
+    <details class="pub-abstract">
+      <summary>Abstract</summary>
+      <p>{{ pub.abstract }}</p>
+    </details>
+    {% endif %}
+    {% assign note_chars = pub.popsci | strip_html | size %}
+    {% if note_chars <= 200 %}
+    <p class="pub-popsci">{{ pub.popsci }}</p>
+    {% else %}
+    <div class="pub-collapse">
+      <input type="checkbox" id="note-{{ forloop.index }}" class="pub-clamp-check">
+      <div class="pub-clamp">
+        <p class="pub-popsci">{{ pub.popsci }}</p>
+      </div>
+      <label for="note-{{ forloop.index }}" class="pub-clamp-toggle">
+        <span class="show-more">Show more</span><span class="show-less">Show less</span>
+      </label>
     </div>
     {% endif %}
     {% if pub.tags %}
