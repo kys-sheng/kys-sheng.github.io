@@ -12,3 +12,11 @@ title: Research
 {{ para }}
 {% endfor %}
 <p>Publication list: <a href="{{ '/publications.html' | relative_url }}">kys-sheng.github.io/publications.html</a></p>
+
+{% if r.motto_tags %}
+<div class="pub-tags">
+  {% for tag in r.motto_tags %}
+  <span class="pub-tag">{{ tag }}</span>
+  {% endfor %}
+</div>
+{% endif %}
