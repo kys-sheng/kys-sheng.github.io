@@ -10,7 +10,10 @@ title: Stuff
 <p class="role">{{ s.under_construction }}</p>
 
 {% for sec in s.sections %}
-<section>
+{% comment %}Longest speaker label in the section, so dialogue colons align across conversations.{% endcomment %}
+{% assign who_width = 0 %}
+{% for item in sec.items %}{% for line in item.lines %}{% if line.who.size > who_width %}{% assign who_width = line.who.size %}{% endif %}{% endfor %}{% endfor %}
+<section{% if who_width > 0 %} style="--who-width:{{ who_width | plus: 1 }}ch"{% endif %}>
   <h2>{{ sec.heading }}</h2>
   {% if sec.intro and sec.intro != "" %}<p class="stuff-text">{{ sec.intro }}</p>{% endif %}
   {% if sec.note and sec.note != "" %}<p class="stuff-source">{{ sec.note }}</p>{% endif %}
