@@ -13,9 +13,19 @@ title: Stuff
 <section>
   <h2>{{ sec.heading }}</h2>
   {% if sec.intro and sec.intro != "" %}<p class="stuff-text">{{ sec.intro }}</p>{% endif %}
+  {% if sec.note and sec.note != "" %}<p class="stuff-source">{{ sec.note }}</p>{% endif %}
   {% for item in sec.items %}
   <div class="stuff-item">
     {% if item.title and item.title != "" %}<div class="stuff-title">{{ item.title }}</div>{% endif %}
+    {% if item.context and item.context != "" %}<p class="dialogue-context">{{ item.context }}</p>{% endif %}
+    {% if item.lines %}
+    <dl class="dialogue">
+      {% for line in item.lines %}
+      <dt{% if line.who == "Me" %} class="me"{% endif %}>{{ line.who }}:</dt>
+      <dd>{{ line.say }}</dd>
+      {% endfor %}
+    </dl>
+    {% endif %}
     {% for para in item.text %}
     <p class="stuff-text">{{ para }}</p>
     {% endfor %}

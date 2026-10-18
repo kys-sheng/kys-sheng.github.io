@@ -75,30 +75,53 @@ sections:
 
   - heading: "Interesting quotes in my physics journey"
     intro: "Things people said to me on my way to physics, and a glimpse of what it can mean to want to do fundamental physics as a Malaysian."
+    note: "Some paraphrasing and translation has been done, since I don't have a photographic memory."
+    # Dialogue items: "context" is optional; each line has "who" and "say".
     items:
-      - title: ""
-        text:
-          - "<strong>Mom:</strong> What is physics? Physical therapy?"
-        source: ""
-      - title: ""
-        text:
-          - "<strong>Business student:</strong> What do you study?"
-          - "<strong>Me:</strong> Physics."
-          - "<strong>Business student:</strong> Why? Did you not get into engineering?"
-          - "<strong>Me:</strong> I didn't choose that. Physics was my first choice at every uni."
-          - "<strong>Business student:</strong> Why did you choose physics? You're not gonna find a job. It's fine, finish your degree and become a tuition teacher."
-        source: ""
-      - title: ""
-        text:
-          - "<strong>Prof:</strong> What do you really wanna do research in?"
-          - "<strong>Me:</strong> Fundamental physics, like particle physics, supersymmetry, QFT, string theory."
-          - "<strong>Prof:</strong> Really? You need to be very smart to do that, though."
-        source: ""
-      - title: ""
-        text:
-          - "<strong>Me:</strong> I feel there's a big gap in my knowledge. Quantum mechanics and special relativity were not properly taught in my undergrad."
-          - "<strong>Tutor:</strong> Quit physics, it's not for you."
-        source: ""
+      - lines:
+          - who: "Mom"
+            say: "What is physics? Physical therapy?"
+      - lines:
+          - who: "Business student"
+            say: "What do you study?"
+          - who: "Me"
+            say: "Physics."
+          - who: "Business student"
+            say: "Why? Did you not get into engineering?"
+          - who: "Me"
+            say: "I didn't choose that. Physics was my first choice at every uni."
+          - who: "Business student"
+            say: "Why did you choose physics? You're not gonna find a job. It's fine, finish your degree and become a tuition teacher."
+      - lines:
+          - who: "Prof"
+            say: "What do you really wanna do research in?"
+          - who: "Me"
+            say: "Fundamental physics, like particle physics, supersymmetry, QFT, string theory."
+          - who: "Prof"
+            say: "Really? You need to be very smart to do that, though."
+      - lines:
+          - who: "Me"
+            say: "I feel there's a big gap in my knowledge. Quantum mechanics and special relativity were not properly taught in my undergrad."
+          - who: "Tutor"
+            say: "Quit physics, it's not for you."
+      - context: "While part-time tutoring maths at a primary school."
+        lines:
+          - who: "Me"
+            say: "So, I'm gonna be at a conference next week, and a substitute will come and teach you guys instead. Do you guys know what a conference is?"
+          - who: "Students (7–12)"
+            say: "No! / What is it? / You have business to sell stuff?"
+          - who: "Me"
+            say: "No. A conference is a place where scientists come together to discuss and share what they have done in their research! For instance, you know some people are trying to make a mini sun on Earth!"
+          - who: "Boy (11–12)"
+            say: "Why?"
+          - who: "Me"
+            say: "So we can have cleaner energy, and more of it?"
+          - who: "Boy (11–12)"
+            say: "Why?"
+          - who: "Me"
+            say: "So you can charge your phone, and it can be cheaper to switch on the lights."
+          - who: "Boy (11–12)"
+            say: "What's the point? Everybody is so stuck to their phone now. Why do we want them on the phone more?"
 
   - heading: "Blurbs"
     items:

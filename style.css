@@ -218,6 +218,19 @@ h3{font-size:1.15rem; font-weight:600; margin:0 0 .2rem}
   margin-top:.4rem;
 }
 
+.dialogue-context{margin:0 0 .6rem; font-style:italic; color:var(--muted)}
+.dialogue{display:grid; grid-template-columns:max-content minmax(0,1fr); column-gap:.8rem; row-gap:.45rem; margin:0}
+.dialogue dt{
+  text-align:right; font-family:"IBM Plex Mono", monospace; font-size:.8rem;
+  color:var(--muted); padding-top:.2rem; white-space:nowrap;
+}
+.dialogue dt.me{color:var(--accent)}
+.dialogue dd{margin:0}
+@media (max-width:480px){
+  .dialogue{grid-template-columns:minmax(0,1fr); row-gap:0}
+  .dialogue dt{text-align:left; padding-top:.5rem}
+}
+
 .lang-table{width:100%; border-collapse:collapse; font-size:.92rem; margin-top:.8rem; table-layout:auto}
 .lang-table th{
   font-family:"IBM Plex Mono", monospace; font-size:.7rem; letter-spacing:.08em;
