@@ -12,6 +12,7 @@ title: Stuff
 {% for sec in s.sections %}
 <section>
   <h2>{{ sec.heading }}</h2>
+  {% if sec.intro and sec.intro != "" %}<p class="stuff-text">{{ sec.intro }}</p>{% endif %}
   {% for item in sec.items %}
   <div class="stuff-item">
     {% if item.title and item.title != "" %}<div class="stuff-title">{{ item.title }}</div>{% endif %}

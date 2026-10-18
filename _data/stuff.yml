@@ -73,12 +73,32 @@ sections:
           - "XXX"
         source: ""
 
-  - heading: "Interesting quotes"
+  - heading: "Interesting quotes in my physics journey"
+    intro: "Things people said to me on my way to physics, and a glimpse of what it can mean to want to do fundamental physics as a Malaysian."
     items:
       - title: ""
         text:
-          - "XXX"
-        source: "XXX"
+          - "<strong>Mom:</strong> What is physics? Physical therapy?"
+        source: ""
+      - title: ""
+        text:
+          - "<strong>Business student:</strong> What do you study?"
+          - "<strong>Me:</strong> Physics."
+          - "<strong>Business student:</strong> Why? Did you not get into engineering?"
+          - "<strong>Me:</strong> I didn't choose that. Physics was my first choice at every uni."
+          - "<strong>Business student:</strong> Why did you choose physics? You're not gonna find a job. It's fine, finish your degree and become a tuition teacher."
+        source: ""
+      - title: ""
+        text:
+          - "<strong>Prof:</strong> What do you really wanna do research in?"
+          - "<strong>Me:</strong> Fundamental physics, like particle physics, supersymmetry, QFT, string theory."
+          - "<strong>Prof:</strong> Really? You need to be very smart to do that, though."
+        source: ""
+      - title: ""
+        text:
+          - "<strong>Me:</strong> I feel there's a big gap in my knowledge. Quantum mechanics and special relativity were not properly taught in my undergrad."
+          - "<strong>Tutor:</strong> Quit physics, it's not for you."
+        source: ""
 
   - heading: "Blurbs"
     items:
