@@ -7,10 +7,11 @@ name_zh: "郭永盛"          # your name in Mandarin, shown in brackets next to
 name_cycle:
   - "Yong Sheng Koay"
   - "Koay Yong Sheng"
-  - "Sheng"
-  - "Yong Sheng"
   - "郭永盛"
-name_cycle_seconds: 2.5
+  - "Yong Sheng"
+  - "永盛"
+  - "Sheng"
+name_cycle_seconds: 3.5
 tagline: "PhD Candidate — AI for Fundamental Physics"  # shown on the Home page, under your name
 
 
