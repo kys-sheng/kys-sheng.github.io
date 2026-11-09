@@ -75,6 +75,9 @@ h1{font-size:2.15rem; font-weight:600; margin:0 0 .35rem; text-wrap:balance; let
   font-family:"Noto Sans SC", "Source Serif 4", serif; font-weight:500; font-size:1.4rem;
   color:var(--muted);
 }
+.name-cycle{display:inline-block; transition:opacity .3s ease, transform .3s ease}
+.name-cycle.is-fading{opacity:0; transform:translateY(.15em)}
+.name-cycle.is-cjk{font-family:"Noto Sans SC", "Source Serif 4", serif; font-weight:500; letter-spacing:.04em}
 .role{color:var(--muted); font-size:1.05rem; margin:0 0 2.6rem}
 
 .subhead{

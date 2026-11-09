@@ -10,9 +10,38 @@ title: Home
   </button>
   <div>
     <p class="kicker">{{ p.tagline }}</p>
+    {% if p.name_cycle and p.name_cycle.size > 1 %}
+    <h1 aria-label="{{ p.name }} ({{ p.name_zh }})"><span class="name-cycle" aria-hidden="true" data-names='{{ p.name_cycle | jsonify | escape }}' data-seconds="{{ p.name_cycle_seconds | default: 2.5 }}">{{ p.name_cycle | first }}</span></h1>
+    {% else %}
     <h1>{{ p.name }} <span class="name-zh">（{{ p.name_zh }}）</span></h1>
+    {% endif %}
   </div>
 </div>
+<script>
+(function(){
+  var el = document.querySelector('.name-cycle');
+  if (!el) return;
+  var names;
+  try { names = JSON.parse(el.getAttribute('data-names')); } catch (e) { return; }
+  if (!names || names.length < 2) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var ms = Math.max(1000, parseFloat(el.getAttribute('data-seconds')) * 1000 || 2500);
+  var cjk = /[\u3400-\u9fff]/;
+  var i = 0;
+  function show(text){
+    el.textContent = text;
+    el.classList.toggle('is-cjk', cjk.test(text));
+  }
+  setInterval(function(){
+    el.classList.add('is-fading');
+    setTimeout(function(){
+      i = (i + 1) % names.length;
+      show(names[i]);
+      el.classList.remove('is-fading');
+    }, 300);
+  }, ms);
+})();
+</script>
 
 <dialog id="avatar-dialog" class="avatar-dialog">
   <button type="button" class="avatar-dialog-close" aria-label="Close">&times;</button>
